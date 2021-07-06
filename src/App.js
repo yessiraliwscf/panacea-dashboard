@@ -4,7 +4,7 @@ import React, { Fragment } from "react";
 import Markup from "./jsx";
 
 /// Style
-import "./vendor/bootstrap-select/dist/css/bootstrap-select.min.css";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "./css/style.css";
 
 import { withResizeDetector } from "react-resize-detector";

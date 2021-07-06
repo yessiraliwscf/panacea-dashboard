@@ -991,7 +991,7 @@ class SideBar extends Component {
 						 Dashboard © 2021 All Rights Reserved
 					  </p>
 					  <p>
-						 Made with <span class="heart"></span> by DexignZone
+						 Made with <span class="heart"></span> by WSCF
 					  </p>
                 </div>
                

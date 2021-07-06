@@ -3661,6 +3661,8 @@ input[type="button"].btn-block {
 
 .card-body {
   flex: 1 1 auto;
+  background:#000017;
+  color:#fff;
   padding: 1.25rem; }
 
 .card-title {
@@ -8573,6 +8575,8 @@ a {
   margin-top: 40px; }
 .content-body .container-fluid {
   padding-top: 40px;
+  background:#0A043C;
+  color: white;
   padding-right: 40px;
   padding-left: 40px; }
   @media only screen and (max-width: 1600px) {
@@ -9299,7 +9303,7 @@ a {
     transform: scale(1); } }
 .footer {
   padding-left: 17.1875rem;
-  background-color: #fbfbfb; }
+  background-color: #0A043C; }
   .footer .copyright {
     padding: 0.9375rem; }
     .footer .copyright p {
@@ -9477,7 +9481,7 @@ a {
 
 [data-sidebar-style="mini"] .nav-header .logo-abbr {
   display: block;
-  max-width: 45px; }
+  max-width: 181px; }
 
 [data-sidebar-style="compact"][data-layout="vertical"] .nav-header .brand-title {
   display: none; }
@@ -9672,7 +9676,7 @@ svg.pulse-svg {
       .header-left .dashboard_bar {
         display: none; } }
   .header-left input {
-    background: #fff !important;
+    background: #0A043C !important;
     min-width: 170px;
     min-height: 40px;
     border-color: transparent;
@@ -9684,7 +9688,7 @@ svg.pulse-svg {
     box-shadow: none;
     padding: 10px 20px;
     font-size: 16px;
-    border: 1px solid #ebebeb;
+    border: 1px solid white;
     border-width: 1px 0px 1px 1px;
     font-weight: 300; }
     [direction="rtl"] .header-left input {
@@ -9713,7 +9717,7 @@ svg.pulse-svg {
     .header-left .search_bar .dropdown-menu {
       box-shadow: none; }
     .header-left .search_bar .search_icon {
-      background: #fff !important;
+      background: #0A043C !important;
       height: 56px;
       padding: 15px 20px 15px 0 !important;
       border-top-right-radius: 0.75rem;
@@ -12057,7 +12061,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
             padding-left: 3.5rem; } }
         .deznav .metismenu ul a:hover, .deznav .metismenu ul a:focus, .deznav .metismenu ul a.mm-active {
           text-decoration: none;
-          color: #52b141; }
+          color: #6754e2; }
     .deznav .metismenu a {
       position: relative;
       display: block;
@@ -12368,6 +12372,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     display: none; }
   [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .slimScrollDiv,
   [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .deznav-scroll {
+   
     overflow: visible !important; }
   [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu li {
     position: relative; }
@@ -12502,6 +12507,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     [data-sidebar-style="mini"] .nav-header .hamburger {
       display: none; }
   [data-sidebar-style="mini"] .header .header-content {
+    background:#0A043C;
     padding-left: 1.875rem; }
     [direction="rtl"][data-sidebar-style="mini"] .header .header-content {
       padding-right: 1.875rem; }
@@ -12516,6 +12522,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
       display: none; }
     [data-sidebar-style="mini"] .deznav .slimScrollDiv,
     [data-sidebar-style="mini"] .deznav .deznav-scroll {
+      background:#000017;
       overflow: visible !important; }
     [data-sidebar-style="mini"] .deznav .nav-user {
       padding: 11px; }
@@ -12596,15 +12603,15 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     top: calc(50% - 12px);
     font-size: 24px;
     line-height: 1;
-    color: #52b141; }
+    color: #6754e2; }
   [data-sidebar-style="mini"][data-layout="vertical"] .deznav .metismenu > li.mm-active > a {
-    background: #e6f5e3;
-    color: #52b141;
+    background: #fff;
+    color: #6754e2;
     border-radius: 12px; }
     [data-theme-version="dark"][data-sidebar-style="mini"][data-layout="vertical"] .deznav .metismenu > li.mm-active > a {
       background: #1e2746; }
   [data-sidebar-style="mini"][data-layout="vertical"] .deznav .metismenu > li:hover > a {
-    background: #52b141;
+    background: #6754e2;
     color: #fff;
     border-radius: 12px;
     position: unset; }
@@ -27866,7 +27873,7 @@ span#counter {
   position: fixed;
   right: 0;
   z-index: 99;
-  background: #fff;
+  background: #000017;
   width: 22rem;
   height: 100%;
   border-left: 1px solid #d8d8d8;

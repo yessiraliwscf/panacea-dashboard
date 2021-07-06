@@ -5,10 +5,12 @@
     }
 }
 
+
 [data-sidebar-style="overlay"] {
     @include respond('phone-land') {
         .nav-header .logo-abbr {
             display: block;
+         
         }
     }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Dropdown, Nav, Tab } from "react-bootstrap";
-
+import styles from './Home.module.css'
 import loadable from "@loadable/component";
 import pMinDelay from "p-min-delay";
 const ApexNagetivePosative3 = loadable(() =>
@@ -50,7 +50,7 @@ function Home() {
                                     67,124
                                  </h1>
                               </div>
-                              <span className="ml-3 bg-primary text-white">
+                              <span className={`ml-3 text-white ${styles.bgPurple}`} >
                                  <i className="flaticon-381-promotion" />
                               </span>
                            </div>
@@ -69,7 +69,7 @@ function Home() {
                                     412,531
                                  </h1>
                               </div>
-                              <span className="ml-3 bg-warning text-white">
+                              <span className={`ml-3 text-white ${styles.bgPurple}`}>
                                  <i className="flaticon-381-user-7" />
                               </span>
                            </div>

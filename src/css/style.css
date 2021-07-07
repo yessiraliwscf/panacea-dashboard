@@ -8345,10 +8345,10 @@ button.bg-dark:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #52b141 !important; }
+  color: #6754e2 !important; }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #38792c !important; }
+  color:#4f37eb!important; }
 
 .text-secondary {
   color: #FF285C !important; }
@@ -8515,7 +8515,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 ::selection {
   color: #fff;
-  background: #52b141; }
+  background: #6754e2;
+ }
 
 body {
   overflow-x: hidden;
@@ -9310,7 +9311,7 @@ a {
       text-align: center;
       margin: 0; }
     .footer .copyright a {
-      color: #52b141; }
+      color: #6754e2; }
 
 [data-sidebar-style="mini"] .nav-control,
 [data-layout="horizontal"] .nav-control {

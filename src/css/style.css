@@ -9340,7 +9340,7 @@ a {
     max-width: 52px; }
     @media only screen and (max-width: 575px) {
       .nav-header .logo-abbr {
-        max-width: 40px; } }
+        max-width: 66px; } }
   .nav-header .logo-compact {
     display: none; }
   @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -9522,6 +9522,7 @@ a {
     @media only screen and (max-width: 767px) {
       .header .header-content {
         padding-left: 3.75rem;
+        background: #000017;
         padding-right: 0.938rem; } }
   .header .navbar {
     padding: 0;
@@ -11977,6 +11978,8 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     .deznav {
       width: 18rem; } }
   .deznav .deznav-scroll {
+    background: #000017;
+
     position: relative;
     height: 100%; }
   @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -12033,11 +12036,11 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
         .deznav .metismenu > li > a g [fill] {
           fill: #52b141; }
       .deznav .metismenu > li:hover > a, .deznav .metismenu > li:focus > a {
-        color: #52b141; }
+        color: #6754e2; }
         .deznav .metismenu > li:hover > a g [fill], .deznav .metismenu > li:focus > a g [fill] {
           fill: #52b141; }
       .deznav .metismenu > li.mm-active > a {
-        color: #52b141; }
+        color: #6754e2; }
         .deznav .metismenu > li.mm-active > a g [fill] {
           fill: #52b141; }
     .deznav .metismenu li {
@@ -15815,7 +15818,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-headerbg="color_1"] .nav-header .hamburger.is-active .line,
 [data-headerbg="color_1"] .nav-header .hamburger .line {
-  background: #52b141 !important; }
+  background: #6754e2 !important; }
 
 @media (min-width: 992px) {
   [data-container="boxed"] #main-wrapper {
@@ -27904,7 +27907,7 @@ span#counter {
   justify-content: space-between;
   padding: 30px;
   border-radius: 0.75rem;
-  background: #ff6d4d;
+  background: #6754e2;
   text-align: left; }
   .card-campaign h5 {
     font-size: 18px;

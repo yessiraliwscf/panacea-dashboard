@@ -24812,7 +24812,7 @@ button {
   .card-header {
     border-color: #f0f1f5;
     position: relative;
-    background: transparent;
+    background: #000017;
     padding: 1.5rem 1.875rem 1.25rem;
     display: flex;
     justify-content: space-between;
@@ -24830,7 +24830,7 @@ button {
       line-height: 1.5; }
   .card-footer {
     border-color: #f0f1f5;
-    background: transparent;
+    background:#000017;
     padding: 1.25rem 1.875rem 1.25rem; }
     [data-theme-version="dark"] .card-footer {
       border-color: #333a54; }

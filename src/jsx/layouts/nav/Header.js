@@ -9,7 +9,7 @@ import profile from "../../../images/profile/pic1.jpg";
 import avatar from "../../../images/avatar/1.jpg";
 import { Dropdown } from "react-bootstrap";
 import ProfileSidebar from "../ProfileSidebar";
-
+import styles from  './Header.module.css'
 const Header = ({
    onNote,
    toggle,
@@ -64,7 +64,7 @@ const Header = ({
                      {!path && (
                         <li className="nav-item dropdown d-none d-xl-flex">
                            <Link className="btn btn-primary" to="/new-compaign">
-                              + New Campaign
+                              + New Campaign 
                            </Link>
                         </li>
                      )}
@@ -88,7 +88,7 @@ const Header = ({
                                  fill="#555555"
                               />
                            </svg>
-                           <span className="badge light text-white bg-primary">
+                           <span className={`badge light text-white ${styles.bgPurple}`} >
                               12
                            </span>
                         </Link>
@@ -230,7 +230,7 @@ const Header = ({
                                  fill="#555555"
                               />
                            </svg>
-                           <span className="badge light text-white bg-primary">
+                           <span className={`badge light text-white ${styles.bgPurple}`}>
                               5
                            </span>
                         </Link>
@@ -255,7 +255,7 @@ const Header = ({
                               />
                            </svg>
                            {path ? (
-                              <span className="badge light text-white bg-secondary">
+                              <span className={`badge light text-white ${styles.bgPurple}`}>
                                  2
                               </span>
                            ) : (
@@ -460,7 +460,7 @@ const Header = ({
 
                      {path && (
                         <li className="nav-item dropdown d-none d-xl-flex">
-                           <Link className="btn btn-primary" to="/new-compaign">
+                           <Link className={`btn ${styles.btnpurple}`}  to="/new-compaign">
                               + New Campaign
                            </Link>
                         </li>

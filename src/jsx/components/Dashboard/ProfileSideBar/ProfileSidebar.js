@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import styles from './ProfileSidebar.module.css'
 function ProfileSidebar() {
    return (
       <div className="profile-sidebar dz-scroll" id="DZ_W_Sidebar">
@@ -8,7 +8,8 @@ function ProfileSidebar() {
             <h5 className="text-black">Profile</h5>
             <Link
                to="/Linkpp-profile"
-               className="text-red text-primary edit-profile-link"
+               className={` ${styles.textPurple}`}
+             
             >
                Edit
             </Link>

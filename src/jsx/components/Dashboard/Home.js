@@ -19,16 +19,16 @@ function Home() {
       <>
          <div className="form-head d-flex mb-0 mb-lg-4 align-items-start">
             <div className="mr-auto d-none d-lg-block">
-               <h2 className="text-black font-w600 mb-1">Dashboard</h2>
+               <h2 className="font-w600 mb-1">Dashboard</h2>
                <p className="mb-0">Welcome to Eclan Ads Campaign Dashboard</p>
             </div>
             <div className="d-none d-lg-flex align-items-center">
                <div className="text-right">
-                  <h3 className="fs-20 text-black mb-0">09:62 AM</h3>
+                  <h3 className="fs-20  mb-0">09:62 AM</h3>
                   <span className="fs-14">Monday, 3 Augusut 2020</span>
                </div>
                <Link
-                  className="ml-4 text-black p-3 rounded border text-center width60"
+                  className="ml-4  p-3 rounded border text-center width60"
                   to="/"
                >
                   <i className="las la-cog scale5" />
@@ -46,7 +46,7 @@ function Home() {
                                  <p className="fs-18 mb-2 wspace-no">
                                     Total Campaign
                                  </p>
-                                 <h1 className="fs-36 font-w600 text-black mb-0">
+                                 <h1 className="fs-36 font-w600  mb-0">
                                     67,124
                                  </h1>
                               </div>
@@ -65,7 +65,7 @@ function Home() {
                                  <p className="fs-18 mb-2 wspace-no">
                                     Total Audience
                                  </p>
-                                 <h1 className="fs-36 font-w600 d-flex align-items-center text-black mb-0">
+                                 <h1 className="fs-36 font-w600 d-flex align-items-center  mb-0">
                                     412,531
                                  </h1>
                               </div>
@@ -112,7 +112,7 @@ function Home() {
                      <div className="card" id="user-activity">
                         <Tab.Container defaultActiveKey="monthly">
                            <div className="card-header pb-0 d-block d-sm-flex border-0">
-                              <h3 className="fs-20 text-black mb-0">
+                              <h3 className="fs-20 mb-0">
                                  Overview
                               </h3>
                               <div className="card-action card-tabs mt-3 mt-sm-0">
@@ -179,7 +179,7 @@ function Home() {
                   <div className="col-xl-12">
                      <div className="card">
                         <div className="card-header border-0 pb-0">
-                           <h3 className="fs-20 text-black mb-0">
+                           <h3 className="fs-20 mb-0">
                               Goal Statistic
                            </h3>
                            <Dropdown className="ml-auto">
@@ -229,11 +229,11 @@ function Home() {
                                  </svg>
                               </Dropdown.Toggle>
                               <Dropdown.Menu className="dropdown-menu-right">
-                                 <Dropdown.Item className="text-black" to="/">
+                                 <Dropdown.Item className="" to="/">
                                     Info
                                  </Dropdown.Item>
                                  <Dropdown.Item
-                                    className="dropdown-item text-black"
+                                    className="dropdown-item "
                                     to="/"
                                  >
                                     Details
@@ -250,7 +250,7 @@ function Home() {
                                  <i className="lab la-instagram gs-icon border border-secondary text-secondary mr-3" />
                                  <div className="media-body">
                                     <p className="mb-1 font-w600">Instagram</p>
-                                    <span className="fs-34 text-black font-w500">
+                                    <span className="fs-34  font-w500">
                                        73%
                                     </span>
                                  </div>
@@ -259,7 +259,7 @@ function Home() {
                                  <i className="lab la-facebook-f gs-icon border border-info text-info mr-3" />
                                  <div className="media-body">
                                     <p className="mb-1 font-w600">Facebook</p>
-                                    <span className="fs-34 text-black font-w500">
+                                    <span className="fs-34  font-w500">
                                        64%
                                     </span>
                                  </div>
@@ -268,7 +268,7 @@ function Home() {
                                  <i className="lab la-twitter gs-icon border border-success text-success mr-3" />
                                  <div className="media-body">
                                     <p className="mb-1 font-w600">Twitter</p>
-                                    <span className="fs-34 text-black font-w500">
+                                    <span className="fs-34 font-w500">
                                        48%
                                     </span>
                                  </div>
@@ -284,7 +284,7 @@ function Home() {
                   <div className="col-lg-12 col-md-6 col-xxl-6">
                      <div className="card">
                         <div className="card-header border-0 pb-0">
-                           <h3 className="fs-20 text-black mb-0">
+                           <h3 className="fs-20  mb-0">
                               Social Network Stats
                            </h3>
                            <Dropdown className="ml-auto">
@@ -334,10 +334,10 @@ function Home() {
                                  </svg>
                               </Dropdown.Toggle>
                               <Dropdown.Menu className="dropdown-menu-right">
-                                 <Dropdown.Item className="text-black" to="/">
+                                 <Dropdown.Item className="" to="/">
                                     Info
                                  </Dropdown.Item>
-                                 <Dropdown.Item className="text-black" to="/">
+                                 <Dropdown.Item className="" to="/">
                                     Details
                                  </Dropdown.Item>
                               </Dropdown.Menu>
@@ -347,7 +347,7 @@ function Home() {
                            <div className="media mb-4 align-items-center">
                               <i className="lab la-instagram social-icon bg-secondary text-white mr-3" />
                               <div className="media-body">
-                                 <span className="text-black font-w600">
+                                 <span className=" font-w600">
                                     Instagram
                                  </span>
                                  <div
@@ -369,7 +369,7 @@ function Home() {
                            <div className="media mb-4 align-items-center">
                               <i className="lab la-facebook-f social-icon bg-info text-white mr-3" />
                               <div className="media-body">
-                                 <span className="text-black font-w600">
+                                 <span className=" font-w600">
                                     Facebook
                                  </span>
                                  <div
@@ -391,7 +391,7 @@ function Home() {
                            <div className="media align-items-center">
                               <i className="lab la-twitter social-icon bg-success text-white mr-3" />
                               <div className="media-body">
-                                 <span className="text-black font-w600">
+                                 <span className=" font-w600">
                                     Twitter
                                  </span>
                                  <div
@@ -425,7 +425,7 @@ function Home() {
                   <div className="col-lg-12 col-md-6 col-xxl-6">
                      <div className="card">
                         <div className="card-header border-0 pb-0">
-                           <h3 className="fs-20 text-black mb-0">
+                           <h3 className="fs-20  mb-0">
                               Ads Engagement
                            </h3>
                            <Dropdown className="ml-auto">
@@ -475,10 +475,10 @@ function Home() {
                                  </svg>
                               </Dropdown.Toggle>
                               <Dropdown.Menu className="dropdown-menu-right">
-                                 <Dropdown.Item className="text-black" to="/">
+                                 <Dropdown.Item className="" to="/">
                                     Info
                                  </Dropdown.Item>
-                                 <Dropdown.Item className="text-black" to="/">
+                                 <Dropdown.Item className="" to="/">
                                     Details
                                  </Dropdown.Item>
                               </Dropdown.Menu>
@@ -492,7 +492,7 @@ function Home() {
                   <div className="col-lg-12 col-md-12">
                      <div className="card">
                         <div className="card-header border-0  pb-0">
-                           <h3 className="fs-20 text-black mb-0">
+                           <h3 className="fs-20 mb-0">
                               Summary Goal
                            </h3>
                            <Dropdown className="dropdown ml-auto">
@@ -542,10 +542,10 @@ function Home() {
                                  </svg>
                               </Dropdown.Toggle>
                               <Dropdown.Menu className="dropdown-menu-right">
-                                 <Dropdown.Item className="text-black" to="/">
+                                 <Dropdown.Item className="" to="/">
                                     Info
                                  </Dropdown.Item>
-                                 <Dropdown.Item className="text-black" to="/">
+                                 <Dropdown.Item className="" to="/">
                                     Details
                                  </Dropdown.Item>
                               </Dropdown.Menu>
@@ -555,7 +555,7 @@ function Home() {
                            <div>
                               <div className="d-flex align-items-center pb-3 mb-3 border-bottom">
                                  <i className="lab la-instagram gs-icon bgl-secondary text-secondary mr-3" />
-                                 <span className="text-black fs-16 font-w600">
+                                 <span className=" fs-16 font-w600">
                                     Instagram
                                  </span>
                               </div>

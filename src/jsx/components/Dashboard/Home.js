@@ -25,7 +25,7 @@ function Home() {
             <div className="d-none d-lg-flex align-items-center">
                <div className="text-right">
                   <h3 className="fs-20  mb-0">09:62 AM</h3>
-                  <span className="fs-14">Monday, 3 Augusut 2020</span>
+                  <span className="fs-14">Monday, 3 July 2021</span>
                </div>
                <Link
                   className="ml-4  p-3 rounded border text-center width60"
@@ -44,10 +44,10 @@ function Home() {
                            <div className="media align-items-center">
                               <div className="media-body">
                                  <p className="fs-18 mb-2 wspace-no">
-                                 Total Payments
+                                 Total Policies
                                  </p>
                                  <h1 className="fs-36 font-w600  mb-0">
-                                   14
+                                   5
                                  </h1>
                               </div>
                               <span className={`ml-3 text-white ${styles.bgPurple}`} >
@@ -63,10 +63,10 @@ function Home() {
                            <div className="media align-items-center">
                               <div className="media-body">
                                  <p className="fs-18 mb-2 wspace-no">
-                                 Manage Policy
+                                 Premium Paid
                                  </p>
                                  <h1 className="fs-36 font-w600 d-flex align-items-center  mb-0">
-                                   41
+                                   $ 4120
                                  </h1>
                               </div>
                               <span className={`ml-3 text-white ${styles.bgPurple}`}>
@@ -82,10 +82,10 @@ function Home() {
                            <div className="media align-items-center">
                               <div className="media-body">
                                  <p className="fs-18 mb-2 wspace-no">
-                                 Premium Coverage
+                                    Monthly Premium
                                  </p>
                                  <h1 className="fs-36 font-w600 d-flex align-items-center  mb-0">
-                                 26
+                                  $ 1000
                                  </h1>
                               </div>
                               <span className={`ml-3 text-white ${styles.bgPurple}`}>
@@ -101,10 +101,10 @@ function Home() {
                            <div className="media align-items-center">
                               <div className="media-body">
                                  <p className="fs-18 mb-2 wspace-no">
-                             Donations
+                                    Donations
                                  </p>
                                  <h1 className="fs-36 font-w600 d-flex align-items-center  mb-0">
-                                74
+                                  $ 300
                                  </h1>
                               </div>
                               <span className={`ml-3 text-white ${styles.bgPurple}`}>
@@ -125,24 +125,24 @@ function Home() {
                                     className="fa fa-caret-up"
                                     aria-hidden="true"
                                  />
-                                 <span className="fs-14">+5%</span>
+                                 <span className="fs-14">+11.45</span>
                               </div>
                               <div className="media-body">
-                                 <p className="fs-18 mb-2">Spends Today</p>
-                                 <span className="fs-34 font-w600">$5,245</span>
+                                 <p className="fs-18 mb-2">Previous Premium</p>
+                                 <span className="fs-34 font-w600">$ 1234</span>
                               </div>
                            </div>
                            <div className="col-lg-6 col-sm-6 media spending-bx pl-2">
                               <div className="media-body text-right">
-                                 <p className="fs-18 mb-2">Spends Yesterday</p>
-                                 <span className="fs-34 font-w600">$4,567</span>
+                                 <p className="fs-18 mb-2">Next Premium</p>
+                                 <span className="fs-34 font-w600">$ 1432</span>
                               </div>
                               <div className="spending-icon ml-4">
                                  <i
                                     className="fa fa-caret-down"
                                     aria-hidden="true"
                                  />
-                                 <span className="fs-14">-2%</span>
+                                 <span className="fs-14">1 Aug</span>
                               </div>
                            </div>
                         </div>
@@ -153,7 +153,7 @@ function Home() {
                      <div className="card">
                         <div className="card-header border-0 pb-0">
                            <h3 className="fs-20 mb-0">
-                              Goal Statistic
+                              Your Policies
                            </h3>
                            <Dropdown className="ml-auto">
                               <Dropdown.Toggle
@@ -220,27 +220,27 @@ function Home() {
                            </div>
                            <div className="row">
                               <div className="col-sm-4 mb-sm-0 mb-3 media">
-                                 <i className="lab la-instagram gs-icon border border-secondary text-secondary mr-3" />
+                                 <i className="lab la-twitter gs-icon border border-info text-info mr-3" />
                                  <div className="media-body">
-                                    <p className="mb-1 font-w600">Instagram</p>
+                                    <p className="mb-1 font-w600">Policy 1</p>
                                     <span className="fs-34  font-w500">
-                                       73%
+                                       85%
                                     </span>
                                  </div>
                               </div>
                               <div className="col-sm-4 mb-sm-0 mb-3 media">
-                                 <i className="lab la-facebook-f gs-icon border border-info text-info mr-3" />
+                                 <i className="lab la-twitter gs-icon border border-info text-info mr-3" />
                                  <div className="media-body">
-                                    <p className="mb-1 font-w600">Facebook</p>
+                                    <p className="mb-1 font-w600">Policy 2</p>
                                     <span className="fs-34  font-w500">
                                        64%
                                     </span>
                                  </div>
                               </div>
                               <div className="col-sm-4 mb-sm-0 mb-3 media">
-                                 <i className="lab la-twitter gs-icon border border-success text-success mr-3" />
+                                 <i className="lab la-twitter gs-icon border border-info text-info mr-3" />
                                  <div className="media-body">
-                                    <p className="mb-1 font-w600">Twitter</p>
+                                    <p className="mb-1 font-w600">Policy 3</p>
                                     <span className="fs-34 font-w500">
                                        48%
                                     </span>

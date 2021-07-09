@@ -476,7 +476,7 @@ class SideBar extends Component {
               2021 All Rights Reserved
             </p>
             <p>
-              Made with <span class="heart"></span> by WSCF
+              Made with <span class="heart"></span>
             </p>
           </div>
         </PerfectScrollbar>

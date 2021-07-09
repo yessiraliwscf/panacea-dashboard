@@ -183,58 +183,9 @@ class SideBar extends Component {
                               Dashboard
                            </Link>
                         </li>
-                        <li>
-                           <Link
-                              to="/campaign"
-                              className={`${
-                                 path === "campaign" ? "mm-active" : ""
-                              }`}
-                           >
-                              Campaign
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              to="/social-network-campaign"
-                              className={`${
-                                 path === "social-network-campaign"
-                                    ? "mm-active"
-                                    : ""
-                              }`}
-                           >
-                              Social Network Campaign
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              to="/spendings"
-                              className={`${
-                                 path === "spendings" ? "mm-active" : ""
-                              }`}
-                           >
-                              Spendings
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              to="/analytics"
-                              className={`${
-                                 path === "analytics" ? "mm-active" : ""
-                              }`}
-                           >
-                              Analytics
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              to="/new-compaign"
-                              className={`${
-                                 path === "new-campaign" ? "mm-active" : ""
-                              }`}
-                           >
-                              New Compaign
-                           </Link>
-                        </li>
+                       
+                       
+                     
                      </ul>
                   </li>
                   <li className={`${app.includes(path) ? "mm-active" : ""}`}>
@@ -244,7 +195,7 @@ class SideBar extends Component {
                         aria-expanded="false"
                      >
                         <i className="flaticon-381-television"></i>
-                        <span className="nav-text">Apps</span>
+                        <span className="nav-text">Your Policy</span>
                      </Link>
                      <ul aria-expanded="false">
                         <li>
@@ -254,7 +205,7 @@ class SideBar extends Component {
                               }`}
                               to="/app-profile"
                            >
-                              Profile
+                          Total Payments
                            </Link>
                         </li>
 						<li>
@@ -264,7 +215,7 @@ class SideBar extends Component {
                               }`}
                               to="/post-details"
                            >
-                              Post Details
+                         Premium Coverage
                            </Link>
                         </li>
                         <li
@@ -272,75 +223,18 @@ class SideBar extends Component {
                               email.includes(path) ? "mm-active" : ""
                            }`}
                         >
-                           <Link
-                              className="has-arrow"
-                              to="#"
-                              aria-expanded="false"
-                           >
-                              Email
-                           </Link>
-                           <ul
-                              aria-expanded="false"
-                              className={`${
-                                 email.includes(path) ? "mm-show" : ""
-                              }`}
-                           >
-                              <li>
-                                 <Link
-                                    className={`${
-                                       path === "email-compose"
-                                          ? "mm-active"
-                                          : ""
-                                    }`}
-                                    to="/email-compose"
-                                 >
-                                    Compose
-                                 </Link>
-                              </li>
-                              <li>
-                                 <Link
-                                    className={`${
-                                       path === "email-inbox" ? "mm-active" : ""
-                                    }`}
-                                    to="/email-inbox"
-                                 >
-                                    Inbox
-                                 </Link>
-                              </li>
-                              <li>
-                                 <Link
-                                    className={`${
-                                       path === "email-read" ? "mm-active" : ""
-                                    }`}
-                                    to="/email-read"
-                                 >
-                                    Read
-                                 </Link>
-                              </li>
-                           </ul>
+                         
+                           
                         </li>
                         <li>
-                           <Link
-                              className={`${
-                                 path === "app-calender" ? "mm-active" : ""
-                              }`}
-                              to="/app-calender"
-                           >
-                              Calendar
-                           </Link>
+                          
                         </li>
                         <li
                            className={`${
                               shop.includes(path) ? "mm-active" : ""
                            }`}
                         >
-                           <Link
-                              className="has-arrow"
-                              to="#"
-                              aria-expanded="false"
-                           >
-                              Shop
-                           </Link>
+                        
                            <ul
                               aria-expanded="false"
                               className={`${
@@ -441,8 +335,8 @@ class SideBar extends Component {
                         to="#"
                         aria-expanded="false"
                      >
-                        <i className="flaticon-381-controls-3"></i>
-                        <span className="nav-text">Charts</span>
+                         <i className="flaticon-381-network"></i>
+                        <span className="nav-text">Donations</span>
                      </Link>
                      <ul aria-expanded="false">
                         <li>
@@ -452,7 +346,7 @@ class SideBar extends Component {
                               }`}
                               to="/chart-rechart"
                            >
-                              RechartJs
+                          Total Beneficiaries
                            </Link>
                         </li>
                         <li>
@@ -462,39 +356,11 @@ class SideBar extends Component {
                               }`}
                               to="/chart-chartjs"
                            >
-                              Chartjs
+                         Premium Coverage
                            </Link>
                         </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "chart-chartist" ? "mm-active" : ""
-                              }`}
-                              to="/chart-chartist"
-                           >
-                              Chartist
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "chart-sparkline" ? "mm-active" : ""
-                              }`}
-                              to="/chart-sparkline"
-                           >
-                              Sparkline
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "chart-apexchart" ? "mm-active" : ""
-                              }`}
-                              to="/chart-apexchart"
-                           >
-                              Apexchart
-                           </Link>
-                        </li>
+                        
+                      
                      </ul>
                   </li>
                   <li
@@ -507,8 +373,8 @@ class SideBar extends Component {
                         to="#"
                         aria-expanded="false"
                      >
-                        <i className="flaticon-381-internet"></i>
-                        <span className="nav-text">Bootstrap</span>
+                      <i class="flaticon-381-settings-2"></i>
+                        <span className="nav-text">Profile</span>
                      </Link>
                      <ul aria-expanded="false">
                         <li>
@@ -518,169 +384,10 @@ class SideBar extends Component {
                               }`}
                               to="/ui-accordion"
                            >
-                              Accordion
+                        Profile
                            </Link>
                         </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-alert" ? "mm-active" : ""
-                              }`}
-                              to="/ui-alert"
-                           >
-                              Alert
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-badge" ? "mm-active" : ""
-                              }`}
-                              to="/ui-badge"
-                           >
-                              Badge
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-button" ? "mm-active" : ""
-                              }`}
-                              to="/ui-button"
-                           >
-                              Button
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-modal" ? "mm-active" : ""
-                              }`}
-                              to="/ui-modal"
-                           >
-                              Modal
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-button-group" ? "mm-active" : ""
-                              }`}
-                              to="/ui-button-group"
-                           >
-                              Button Group
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-list-group" ? "mm-active" : ""
-                              }`}
-                              to="/ui-list-group"
-                           >
-                              List Group
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-media-object" ? "mm-active" : ""
-                              }`}
-                              to="/ui-media-object"
-                           >
-                              Media Object
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-card" ? "mm-active" : ""
-                              }`}
-                              to="/ui-card"
-                           >
-                              Cards
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-carousel" ? "mm-active" : ""
-                              }`}
-                              to="/ui-carousel"
-                           >
-                              Carousel
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-dropdown" ? "mm-active" : ""
-                              }`}
-                              to="/ui-dropdown"
-                           >
-                              Dropdown
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-popover" ? "mm-active" : ""
-                              }`}
-                              to="/ui-popover"
-                           >
-                              Popover
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-progressbar" ? "mm-active" : ""
-                              }`}
-                              to="/ui-progressbar"
-                           >
-                              Progressbar
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-tab" ? "mm-active" : ""
-                              }`}
-                              to="/ui-tab"
-                           >
-                              Tab
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-typography" ? "mm-active" : ""
-                              }`}
-                              to="/ui-typography"
-                           >
-                              Typography
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-pagination" ? "mm-active" : ""
-                              }`}
-                              to="/ui-pagination"
-                           >
-                              Pagination
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "ui-grid" ? "mm-active" : ""
-                              }`}
-                              to="/ui-grid"
-                           >
-                              Grid
-                           </Link>
-                        </li>
+                       
                      </ul>
                   </li>
                   <li
@@ -691,8 +398,8 @@ class SideBar extends Component {
                         to="#"
                         aria-expanded="false"
                      >
-                        <i className="flaticon-381-heart"></i>
-                        <span className="nav-text">Plugins</span>
+           <i class="flaticon-381-notepad"></i>
+                        <span className="nav-text">Activity</span>
                      </Link>
                      <ul aria-expanded="false">
                         <li>
@@ -702,111 +409,23 @@ class SideBar extends Component {
                               }`}
                               to="/uc-select2"
                            >
-                              Select 2
+                           Activity
                            </Link>
                         </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "uc-nestable" ? "mm-active" : ""
-                              }`}
-                              to="/uc-nestable"
-                           >
-                              Nestedable
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "uc-noui-slider" ? "mm-active" : ""
-                              }`}
-                              to="/uc-noui-slider"
-                           >
-                              Noui Slider
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "uc-sweetalert" ? "mm-active" : ""
-                              }`}
-                              to="/uc-sweetalert"
-                           >
-                              Sweet Alert
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "uc-toastr" ? "mm-active" : ""
-                              }`}
-                              to="/uc-toastr"
-                           >
-                              Toastr
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "map-jqvmap" ? "mm-active" : ""
-                              }`}
-                              to="/map-jqvmap"
-                           >
-                              Jqv Map
-                           </Link>
-                        </li>
-						<li>
-						 <Link
-                              className={`${
-                                 path === "uc-lightgallery" ? "mm-active" : ""
-                              }`}
-                              to="/uc-lightgallery"
-                           >
-                              Light Gallery
-                           </Link>
-                        </li>
+                       
+                      
+                     
+                      
+					
                      </ul>
                   </li>
                   <li className={`${widget.includes(path) ? "mm-active" : ""}`}>
-                     <Link
-                        to="widget-basic"
-                        className="ai-icon"
-                        aria-expanded="false"
-                     >
-                        <i className="flaticon-381-settings-2"></i>
-                        <span className="nav-text">Widget</span>
-                     </Link>
+                    
                   </li>
                   <li className={`${forms.includes(path) ? "mm-active" : ""}`}>
-                     <Link
-                        className="has-arrow ai-icon"
-                        to="#"
-                        aria-expanded="false"
-                     >
-                        <i className="flaticon-381-notepad"></i>
-                        <span className="nav-text forms">Forms</span>
-                     </Link>
+                    
                      <ul aria-expanded="false">
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "form-element" ? "mm-active" : ""
-                              }`}
-                              to="/form-element"
-                           >
-                              Form Elements
-                           </Link>
-                        </li>
-                        <li>
-                           <Link
-                              className={`${
-                                 path === "form-wizard" ? "mm-active" : ""
-                              }`}
-                              to="/form-wizard"
-                           >
-                              Wizard
-                           </Link>
-                        </li>
+                     
                         <li>
                            <Link
                               className={`${
@@ -844,14 +463,7 @@ class SideBar extends Component {
                      </ul>
                   </li>
                   <li className={`${table.includes(path) ? "mm-active" : ""}`}>
-                     <Link
-                        className="has-arrow ai-icon"
-                        to="#"
-                        aria-expanded="false"
-                     >
-                        <i className="flaticon-381-network"></i>
-                        <span className="nav-text">Table</span>
-                     </Link>
+                    
                      <ul aria-expanded="false">
                         <li>
                            <Link
@@ -880,14 +492,7 @@ class SideBar extends Component {
                      </ul>
                   </li>
                   <li className={`${pages.includes(path) ? "mm-active" : ""}`}>
-                     <Link
-                        className="has-arrow ai-icon"
-                        to="#"
-                        aria-expanded="false"
-                     >
-                        <i className="flaticon-381-layer-1"></i>
-                        <span className="nav-text">Pages</span>
-                     </Link>
+                   
                      <ul aria-expanded="false">
                         <li>
                            <Link to="/page-register">Register</Link>

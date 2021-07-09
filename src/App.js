@@ -32,7 +32,7 @@ const App = ({ width }) => {
 
    return (
       <Fragment>
-         <Markup showProfileSideBar={width <= 1300 ? false : true} />
+         <Markup />
       </Fragment>
    );
 };

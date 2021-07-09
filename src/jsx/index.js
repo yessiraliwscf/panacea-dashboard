@@ -95,11 +95,9 @@ import MainSweetAlert from "./components/PluginsMenu/Sweet Alert/SweetAlert";
 import Toastr from "./components/PluginsMenu/Toastr/Toastr";
 import JqvMap from "./components/PluginsMenu/Jqv Map/JqvMap";
 import RechartJs from "./components/charts/rechart";
-import ProfileSidebar from "./layouts/ProfileSidebar";
 import Lightgallery from "./components/PluginsMenu/Lightgallery/Lightgallery";
 
-const Markup = ({ showProfileSideBar }) => {
-   const [showProfile, setShowProfile] = useState(false);
+const Markup = () => {
    const routes = [
       /// Deshborad
       { url: "", component: Home },
@@ -196,19 +194,12 @@ const Markup = ({ showProfileSideBar }) => {
          <div
             id={`${!pagePath ? "main-wrapper" : ""}`}
             className={`${!pagePath ? "show" : "mh100vh"} ${
-               !path ? "right-profile" : ""
+               !path ? "" : ""
             }`}
          >
             {!pagePath && (
                <Nav
-                  showProfileSideBar={showProfileSideBar}
-                  showProfile={() => setShowProfile(true)}
-               />
-            )}
-            {!path && !pagePath && (
-               <ProfileSidebar
-                  addClass={showProfile ? "active" : ""}
-                  hideProfile={() => setShowProfile(false)}
+                  
                />
             )}
             <div

@@ -175,165 +175,32 @@ class SideBar extends Component {
               </ul>
             </li>
             <li className={`${app.includes(path) ? 'mm-active' : ''}`}>
-              <Link className="has-arrow ai-icon" to="#" aria-expanded="false">
+              <Link className="has-arrow ai-icon" to="/post-details" aria-expanded="false">
                 <i className="flaticon-381-television"></i>
                 <span className="nav-text">Your Policy</span>
               </Link>
-              <ul aria-expanded="false">
-                <li>
-                  <Link
-                    className={`${path === 'app-profile' ? 'mm-active' : ''}`}
-                    to="/app-profile"
-                  >
-                    Total Payments
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className={`${path === 'post-details' ? 'mm-active' : ''}`}
-                    to="/post-details"
-                  >
-                    Premium Coverage
-                  </Link>
-                </li>
-                <li
-                  className={`${email.includes(path) ? 'mm-active' : ''}`}
-                ></li>
-                <li></li>
-                <li className={`${shop.includes(path) ? 'mm-active' : ''}`}>
-                  <ul
-                    aria-expanded="false"
-                    className={`${shop.includes(path) ? 'mm-show' : ''}`}
-                  >
-                    <li>
-                      <Link
-                        className={`${
-                          path === 'ecom-product-grid' ? 'mm-active' : ''
-                        }`}
-                        to="/ecom-product-grid"
-                      >
-                        Product Grid
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className={`${
-                          path === 'ecom-product-list' ? 'mm-active' : ''
-                        }`}
-                        to="/ecom-product-list"
-                      >
-                        Product List
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className={`${
-                          path === 'ecom-product-detail' ? 'mm-active' : ''
-                        }`}
-                        to="/ecom-product-detail"
-                      >
-                        Product Details
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className={`${
-                          path === 'ecom-product-order' ? 'mm-active' : ''
-                        }`}
-                        to="/ecom-product-order"
-                      >
-                        Order
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className={`${
-                          path === 'ecom-checkout' ? 'mm-active' : ''
-                        }`}
-                        to="/ecom-checkout"
-                      >
-                        Checkout
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className={`${
-                          path === 'ecom-invoice' ? 'mm-active' : ''
-                        }`}
-                        to="/ecom-invoice"
-                      >
-                        Invoice
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className={`${
-                          path === 'ecom-customers' ? 'mm-active' : ''
-                        }`}
-                        to="/ecom-customers"
-                      >
-                        Customers
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+         
             </li>
             <li className={`${charts.includes(path) ? 'mm-active' : ''}`}>
-              <Link className="has-arrow ai-icon" to="#" aria-expanded="false">
+              <Link className="has-arrow ai-icon" to="/social-network-campaign" aria-expanded="false">
                 <i className="flaticon-381-network"></i>
                 <span className="nav-text">Donations</span>
               </Link>
-              <ul aria-expanded="false">
-                <li>
-                  <Link
-                    className={`${path === 'chart-rechart' ? 'mm-active' : ''}`}
-                    to="/chart-rechart"
-                  >
-                    Total Beneficiaries
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className={`${path === 'chart-chartjs' ? 'mm-active' : ''}`}
-                    to="/chart-chartjs"
-                  >
-                    Premium Coverage
-                  </Link>
-                </li>
-              </ul>
+           
             </li>
             <li className={`${bootstrap.includes(path) ? 'mm-active' : ''}`}>
-              <Link className="has-arrow ai-icon" to="#" aria-expanded="false">
+              <Link className="has-arrow ai-icon" to="/app-profile" aria-expanded="false">
                 <i class="flaticon-381-settings-2"></i>
                 <span className="nav-text">Profile</span>
               </Link>
-              <ul aria-expanded="false">
-                <li>
-                  <Link
-                    className={`${path === 'ui-accordion' ? 'mm-active' : ''}`}
-                    to="/ui-accordion"
-                  >
-                    Profile
-                  </Link>
-                </li>
-              </ul>
+             
             </li>
             <li className={`${plugins.includes(path) ? 'mm-active' : ''}`}>
-              <Link className="has-arrow ai-icon" to="#" aria-expanded="false">
+              <Link className="has-arrow ai-icon" to="/uc-select2" aria-expanded="false">
                 <i class="flaticon-381-notepad"></i>
                 <span className="nav-text">Activity</span>
               </Link>
-              <ul aria-expanded="false">
-                <li>
-                  <Link
-                    className={`${path === 'uc-select2' ? 'mm-active' : ''}`}
-                    to="/uc-select2"
-                  >
-                    Activity
-                  </Link>
-                </li>
-              </ul>
+             
             </li>
             <li className={`${widget.includes(path) ? 'mm-active' : ''}`}></li>
             <li className={`${forms.includes(path) ? 'mm-active' : ''}`}>

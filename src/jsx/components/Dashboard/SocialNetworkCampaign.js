@@ -9,29 +9,19 @@ function SocialNetworkCampaign() {
       <>
          <div className="form-head d-flex mb-0 mb-lg-4 align-items-start">
             <div className="mr-auto d-none d-lg-block">
-               <h2 className="text-black font-w600">Social Network Campaign</h2>
-               <div>
-                  <Link
-                     to="/social-network-campaign"
-                     className="fs-18 text-primary font-w600"
-                  >
-                     Campaign /{" "}
-                  </Link>
-                  <Link to="/social-network-campaign" className="fs-18">
-                     Social Network Campaign
-                  </Link>
-               </div>
+               <h2 className=" font-w600 text-white">Donations</h2>
+             
             </div>
             <div className="d-none d-lg-flex align-items-center">
                <div className="text-right">
-                  <h3 className="fs-20 text-black mb-0">09:62 AM</h3>
+                  <h3 className="fs-20  mb-0">09:62 AM</h3>
                   <span className="fs-14">Monday, 3 Augusut 2020</span>
                </div>
                <Link
                   className="ml-4 text-black p-3 rounded border text-center width60"
                   to="/social-network-campaign"
                >
-                  <i className="las la-cog scale5" />
+                  <i className="las la-cog scale5 text-white" />
                </Link>
             </div>
          </div>
@@ -47,23 +37,23 @@ function SocialNetworkCampaign() {
                         </div>
                      </div>
                      <div className="d-flex mr-3 mb-3 align-items-center bgl-secondary p-0 p-lg-2 pr-lg-3 rounded">
-                        <i className="lab la-instagram social-icon bg-secondary mr-0 mr-lg-3 text-white" />
+                        <i className="lab la-bitcoin social-icon bg-secondary mr-0 mr-lg-3 text-white" />
                         <div className="d-none d-lg-block">
-                           <h5 className="text-black fs-18 mb-0">Instagram</h5>
+                           <h5 className="text-black fs-18 mb-0">Donation In BTC</h5>
                            <span className="fs-13">457 Campaign</span>
                         </div>
                      </div>
                      <div className="d-flex mr-3 mb-3 align-items-center bgl-info p-0 p-lg-2 pr-lg-3 rounded">
-                        <i className="lab la-facebook-f social-icon bg-info mr-0 mr-lg-3 text-white" />
+                        <i className="las la-dollar-sign social-icon bg-info mr-0 mr-lg-3 text-white" />
                         <div className="d-none d-lg-block">
-                           <h5 className="text-black fs-18 mb-0">Facebook</h5>
+                           <h5 className="text-black fs-18 mb-0">Donation In USD</h5>
                            <span className="fs-13">125 Campaign</span>
                         </div>
                      </div>
                      <div className="d-flex mb-3 align-items-center bgl-success p-0 p-lg-2 pr-lg-3 rounded">
-                        <i className="lab la-twitter social-icon bg-success mr-0 mr-lg-3  text-white" />
+                        <i className="lab la-ethereum social-icon bg-success mr-0 mr-lg-3  text-white" />
                         <div className="d-none d-lg-block">
-                           <h5 className="text-black fs-18 mb-0">Twitter</h5>
+                           <h5 className="text-black fs-18 mb-0">Donations In Ethereum</h5>
                            <span className="fs-13">5125 Campaign</span>
                         </div>
                      </div>
@@ -131,18 +121,7 @@ function SocialNetworkCampaign() {
                            50% OFF Floor Lamp Get it Now!
                         </Link>
                      </h3>
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-facebook-f text-info mr-4"
-                     />
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-instagram mr-4 text-secondary scale5"
-                     />
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-twitter text-success scale5"
-                     />
+                  
                   </div>
                   <div className="col-xl-5 col-xxl-5 col-md-8 col-sm-12">
                      <div className="row">
@@ -170,7 +149,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">$63.04</h3>
-                              <span className="fs-14">Conversion</span>
+                              <span className="fs-14 text-black">Conversion</span>
                            </div>
                         </div>
                         <div className="d-flex col-xl-4 align-items-center col-md-4  col-sm-4 my-2 col-6">
@@ -200,7 +179,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">5,412k</h3>
-                              <span className="fs-14">Viewers</span>
+                              <span className="fs-14 text-black">Viewers</span>
                            </div>
                         </div>
                         <div className="d-flex align-items-center col-xl-4 col-md-4 col-sm-4 my-2 col-12">
@@ -223,7 +202,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">4,625k</h3>
-                              <span className="fs-14">Likes</span>
+                              <span className="fs-14 text-black">Likes</span>
                            </div>
                         </div>
                      </div>
@@ -246,7 +225,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">2,512</h3>
-                              <span className="fs-14">Comments</span>
+                              <span className="fs-14 text-black">Comments</span>
                            </div>
                         </div>
                         <div className="d-flex col-xl-4 col-xxl-6 align-items-center col-md-3  col-sm-4 my-2 col-5">
@@ -332,18 +311,7 @@ function SocialNetworkCampaign() {
                            15% OFF Granite Stone
                         </Link>
                      </h3>
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-facebook-f text-info mr-4"
-                     />
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-instagram mr-4 text-secondary scale5"
-                     />
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-twitter text-success scale5"
-                     />
+                    
                   </div>
                   <div className="col-xl-5 col-xxl-5 col-md-8 col-sm-12">
                      <div className="row">
@@ -371,7 +339,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">$74.02</h3>
-                              <span className="fs-14">Conversion</span>
+                              <span className="fs-14 text-black">Conversion</span>
                            </div>
                         </div>
                         <div className="d-flex col-xl-4 align-items-center col-md-4  col-sm-4 my-2 col-6">
@@ -401,7 +369,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">3,687k</h3>
-                              <span className="fs-14">Viewers</span>
+                              <span className="fs-14 text-black">Viewers</span>
                            </div>
                         </div>
                         <div className="d-flex align-items-center col-xl-4 col-md-4 col-sm-4 my-2 col-12">
@@ -424,7 +392,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">3,842k</h3>
-                              <span className="fs-14">Likes</span>
+                              <span className="fs-14 text-black">Likes</span>
                            </div>
                         </div>
                      </div>
@@ -447,7 +415,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">2,512</h3>
-                              <span className="fs-14">Comments</span>
+                              <span className="fs-14 text-black">Comments</span>
                            </div>
                         </div>
                         <div className="d-flex col-xl-4 col-xxl-6 align-items-center col-md-3  col-sm-4 my-2 col-5">
@@ -533,18 +501,7 @@ function SocialNetworkCampaign() {
                            Game Online Vouchers 20% OFF
                         </Link>
                      </h3>
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-facebook-f text-info mr-4"
-                     />
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-instagram mr-4 text-secondary scale5"
-                     />
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-twitter text-success scale5"
-                     />
+                  
                   </div>
                   <div className="col-xl-5 col-xxl-5 col-md-8 col-sm-12">
                      <div className="row">
@@ -572,7 +529,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">$245.55</h3>
-                              <span className="fs-14">Conversion</span>
+                              <span className="fs-14 text-black">Conversion</span>
                            </div>
                         </div>
                         <div className="d-flex col-xl-4 align-items-center col-md-4  col-sm-4 my-2 col-6">
@@ -602,7 +559,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">2,412k</h3>
-                              <span className="fs-14">Viewers</span>
+                              <span className="fs-14 text-black">Viewers</span>
                            </div>
                         </div>
                         <div className="d-flex align-items-center col-xl-4 col-md-4 col-sm-4 my-2 col-12">
@@ -625,7 +582,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">1,254</h3>
-                              <span className="fs-14">Likes</span>
+                              <span className="fs-14 text-black">Likes</span>
                            </div>
                         </div>
                      </div>
@@ -648,7 +605,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">6,125</h3>
-                              <span className="fs-14">Comments</span>
+                              <span className="fs-14 text-black">Comments</span>
                            </div>
                         </div>
                         <div className="d-flex col-xl-4 col-xxl-6 align-items-center col-md-3  col-sm-4 my-2 col-5">
@@ -734,18 +691,7 @@ function SocialNetworkCampaign() {
                            50% OFF Floor Lamp Get it Now!
                         </Link>
                      </h3>
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-facebook-f text-info mr-4"
-                     />
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-instagram mr-4 text-secondary scale5"
-                     />
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-twitter text-success scale5"
-                     />
+                  
                   </div>
                   <div className="col-xl-5 col-xxl-5 col-md-8 col-sm-12">
                      <div className="row">
@@ -773,7 +719,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">$63.04</h3>
-                              <span className="fs-14">Conversion</span>
+                              <span className="fs-14 text-black">Conversion</span>
                            </div>
                         </div>
                         <div className="d-flex col-xl-4 align-items-center col-md-4  col-sm-4 my-2 col-6">
@@ -803,7 +749,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">5,412k</h3>
-                              <span className="fs-14">Viewers</span>
+                              <span className="fs-14 text-black">Viewers</span>
                            </div>
                         </div>
                         <div className="d-flex align-items-center col-xl-4 col-md-4 col-sm-4 my-2 col-12">
@@ -826,7 +772,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">4,625k</h3>
-                              <span className="fs-14">Likes</span>
+                              <span className="fs-14 text-black">Likes</span>
                            </div>
                         </div>
                      </div>
@@ -849,7 +795,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">2,512</h3>
-                              <span className="fs-14">Comments</span>
+                              <span className="fs-14 text-black">Comments</span>
                            </div>
                         </div>
                         <div className="d-flex col-xl-4 col-xxl-6 align-items-center col-md-3  col-sm-4 my-2 col-5">
@@ -935,18 +881,7 @@ function SocialNetworkCampaign() {
                            15% OFF Granite Stone
                         </Link>
                      </h3>
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-facebook-f text-info mr-4"
-                     />
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-instagram mr-4 text-secondary scale5"
-                     />
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-twitter text-success scale5"
-                     />
+                   
                   </div>
                   <div className="col-xl-5 col-xxl-5 col-md-8 col-sm-12">
                      <div className="row">
@@ -974,7 +909,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">$74.02</h3>
-                              <span className="fs-14">Conversion</span>
+                              <span className="fs-14 text-black">Conversion</span>
                            </div>
                         </div>
                         <div className="d-flex col-xl-4 align-items-center col-md-4  col-sm-4 my-2 col-6">
@@ -1004,7 +939,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">3,687k</h3>
-                              <span className="fs-14">Viewers</span>
+                              <span className="fs-14 text-black">Viewers</span>
                            </div>
                         </div>
                         <div className="d-flex align-items-center col-xl-4 col-md-4 col-sm-4 my-2 col-12">
@@ -1027,7 +962,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">3,842k</h3>
-                              <span className="fs-14">Likes</span>
+                              <span className="fs-14 text-black">Likes</span>
                            </div>
                         </div>
                      </div>
@@ -1050,7 +985,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">2,512</h3>
-                              <span className="fs-14">Comments</span>
+                              <span className="fs-14 text-black">Comments</span>
                            </div>
                         </div>
                         <div className="d-flex col-xl-4 col-xxl-6 align-items-center col-md-3  col-sm-4 my-2 col-5">
@@ -1136,18 +1071,7 @@ function SocialNetworkCampaign() {
                            Game Online Vouchers 20% OFF
                         </Link>
                      </h3>
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-facebook-f text-info mr-4"
-                     />
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-instagram mr-4 text-secondary scale5"
-                     />
-                     <Link
-                        to="/social-network-campaign"
-                        className="lab la-twitter text-success scale5"
-                     />
+                   
                   </div>
                   <div className="col-xl-5 col-xxl-5 col-md-8 col-sm-12">
                      <div className="row">
@@ -1175,7 +1099,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">$245.55</h3>
-                              <span className="fs-14">Conversion</span>
+                              <span className="fs-14 text-black">Conversion</span>
                            </div>
                         </div>
                         <div className="d-flex col-xl-4 align-items-center col-md-4  col-sm-4 my-2 col-6">
@@ -1205,7 +1129,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">2,412k</h3>
-                              <span className="fs-14">Viewers</span>
+                              <span className="fs-14 text-black">Viewers</span>
                            </div>
                         </div>
                         <div className="d-flex align-items-center col-xl-4 col-md-4 col-sm-4 my-2 col-12">
@@ -1228,7 +1152,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">1,254</h3>
-                              <span className="fs-14">Likes</span>
+                              <span className="fs-14 text-black">Likes</span>
                            </div>
                         </div>
                      </div>
@@ -1251,7 +1175,7 @@ function SocialNetworkCampaign() {
                            </svg>
                            <div>
                               <h3 className="fs-20 text-black mb-0">6,125</h3>
-                              <span className="fs-14">Comments</span>
+                              <span className="fs-14 text-black">Comments</span>
                            </div>
                         </div>
                         <div className="d-flex col-xl-4 col-xxl-6 align-items-center col-md-3  col-sm-4 my-2 col-5">
@@ -1330,7 +1254,10 @@ function SocialNetworkCampaign() {
                   </div>
                </div>
             </div>
+         
          </div>
+         <br></br>
+           <br></br>
       </>
    );
 }

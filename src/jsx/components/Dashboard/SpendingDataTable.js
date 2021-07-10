@@ -1926,6 +1926,7 @@ const SpendingDataTable = () => {
                               $67,234.66
                            </span>
                         </td>
+                       
                         <td>
                            <span className="p-2 rounded border">
                               <svg
@@ -2094,43 +2095,7 @@ const SpendingDataTable = () => {
                         : data.length}{" "}
                      of {data.length} entries
                   </div>
-                  <div className="dataTables_paginate paging_simple_numbers">
-                     <Link
-                        to="/spendings"
-                        className="paginate_button previous disabled"
-                        aria-controls="example5"
-                        onClick={() =>
-                           activePag.current > 0 &&
-                           onClick(activePag.current - 1)
-                        }
-                     >
-                        Previous
-                     </Link>
-                     <span>
-                        {paggination.map((number, i) => (
-                           <Link
-                              key={i}
-                              to="/spendings"
-                              className={`paginate_button  ${
-                                 activePag.current === i ? "current" : ""
-                              }`}
-                              onClick={() => onClick(i)}
-                           >
-                              {number}
-                           </Link>
-                        ))}
-                     </span>
-                     <Link
-                        to="/spendings"
-                        className="paginate_button next"
-                        onClick={() =>
-                           activePag.current + 1 < paggination.length &&
-                           onClick(activePag.current + 1)
-                        }
-                     >
-                        Next
-                     </Link>
-                  </div>
+              
                </div>
             </div>
          </div>

@@ -31,7 +31,7 @@ function Home() {
                   className="ml-4  p-3 rounded border text-center width60"
                   to="/"
                >
-                  <i className="las la-cog scale5" />
+                  <i className="las la-cog scale5 text-white" />
                </Link>
             </div>
          </div>

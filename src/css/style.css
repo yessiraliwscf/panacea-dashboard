@@ -12609,7 +12609,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     line-height: 1;
     color: #6754e2; }
   [data-sidebar-style="mini"][data-layout="vertical"] .deznav .metismenu > li.mm-active > a {
-    background: #fff;
+    background: #0A043C;
     color: #6754e2;
     border-radius: 12px; }
     [data-theme-version="dark"][data-sidebar-style="mini"][data-layout="vertical"] .deznav .metismenu > li.mm-active > a {
@@ -24100,7 +24100,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
         .page-titles .breadcrumb li {
           font-size: 15px; } }
       .page-titles .breadcrumb li a {
-        color: #52b141; }
+        color: white; }
       .page-titles .breadcrumb li.active a {
         color: #7e7e7e; }
     .page-titles .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
@@ -26254,7 +26254,7 @@ code {
   font-size: 28px; }
 
 .bgl-primary {
-  background: #e6f5e3;
+  background: #6754e2;
   border-color: #e6f5e3; }
   [data-theme-version="dark"] .bgl-primary {
     background-color: rgba(82, 177, 65, 0.2);
@@ -26335,7 +26335,9 @@ code {
 
 .overlay-box {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  background:#000017 !important;
+ }
   .overlay-box:after {
     content: "";
     width: 100%;
@@ -26344,7 +26346,7 @@ code {
     top: 0;
     position: absolute;
     opacity: 0.85;
-    background: #52b141;
+    background:#000017 !important;
     z-index: -1; }
 
 .rating-bar {

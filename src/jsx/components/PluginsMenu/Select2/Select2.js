@@ -4,943 +4,118 @@ import CustomGroup from "./CustomGroup";
 import Disabling from "./Disabling";
 import CustomClearIndicator from "./MultiSelect";
 import PageTitle from "../../../layouts/PageTitle";
-
+import loadable from "@loadable/component";
+import pMinDelay from "p-min-delay";
+import { Dropdown, Nav, Tab } from "react-bootstrap";
 import CustomSelete from "./CustomeSelete";
-
-const options = [
-   { value: "chocolate", label: "Chocolate" },
-   { value: "strawberry", label: "Strawberry" },
-   { value: "vanilla", label: "Vanilla" },
-];
+import { Link } from "react-router-dom";
+import SpendingDataTable from "./../../Dashboard/SpendingDataTable";
+const LineChart7 = loadable(() =>
+   pMinDelay(import("../../charts/Chartjs/line7"), 0)
+);
 
 const Select2 = () => {
-   const [selectedOption, setSelectedOption] = useState(null);
+ 
 
    return (
       <Fragment>
-         <PageTitle activeMenu="Select2" motherMenu="Components" />
-
+        <div className="mr-auto d-none d-lg-block">
+               <h2 className="text-left font-w600 text-white">Activity</h2>
+             
+            </div>
          <div className="row">
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Single select boxes</h4>
-                        <p>
-                           Select2 can take a regular select box like this...
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
+         <div className="form-head d-flex mb-0 mb-lg-4 align-items-start">
+            
+            <div className="d-none d-lg-flex align-items-center">
+              
+              
             </div>
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Multi-select boxes</h4>
-                        <p>
-                           Select2 also supports multi-value select boxes. The
-                           select below is declared with the multiple
-                           <mark className="text-primary">attribute</mark>.
-                        </p>
-                     </div>
-
-                     <CustomClearIndicator></CustomClearIndicator>
+         </div>
+        
+            <div className="col-xl-12">
+               <div className="d-flex justify-content-between mb-1 flex-wrap">
+                  <div>
+                 
                   </div>
-               </div>
-            </div>
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Dropdown option groups</h4>
-                        <p>
-                           In HTML, <code> &lt;option&gt;</code> elements can be
-                           grouped by wrapping them with in <br /> a
-                           <code>&lt;optgroup&gt;</code>
-                           element:
-                        </p>
-                     </div>
-
-                     <CustomGroup></CustomGroup>
-                  </div>
-               </div>
-            </div>
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Disabling options</h4>
-                        <p>
-                           Select2 will correctly handle disabled options when
-                           <code>disabled</code> attribute is set) and from
-                           remote srouces where the object has
-                           <code>disabled: true</code> set.
-                        </p>
-                     </div>
-
-                     <Disabling></Disabling>
-                  </div>
-               </div>
-            </div>
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Disabling a Select2 control
-                        </h4>
-                        <p>
-                           Select2 will respond to the <code>disabled</code>
-                           attribute on
-                           <code>&lt;select&gt;</code> elements. You can also
-                           initialize Select2 with
-                           <code>disabled: true</code> to get the same effect.
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                     <br />
-                     <CustomClearIndicator></CustomClearIndicator>
-                     <br />
-                     <button
-                        className="btn btn-primary mr-2"
-                        id="js-programmatic-enable"
-                     >
-                        Enable
-                     </button>
-                     <button
-                        className="btn btn-primary"
-                        id="js-programmatic-disable"
-                     >
-                        Disable
-                     </button>
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Select2 With Labels</h4>
-                        <p>
-                           You can, and should, use a <code>&lt;label&gt;</code>
-                           with Select2, just like any other
-                           <code>&lt;select&gt;</code> element.
-                        </p>
-                     </div>
-
-                     <label
-                        className="mb-4 select2-label"
-                        htmlFor="id_label_single"
-                     >
-                        Click this to highlight the single select element <br />
-                        <Select
-                           defaultValue={selectedOption}
-                           onChange={setSelectedOption}
-                           options={options}
-                           style={{
-                              lineHeight: "40px",
-                              color: "#7e7e7e",
-                              paddingLeft: " 15px",
-                           }}
-                        />
-                     </label>
-
-                     <label
-                        className="select2-label"
-                        htmlFor="id_label_multiple"
-                     >
-                        Click this to highlight the multiple select element
-                        <br />
-                        <CustomClearIndicator></CustomClearIndicator>
-                        <br />
-                     </label>
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Container Width</h4>
-                        <p>
-                           The two Select2 boxes below are styled to
-                           <code>50%</code> and <code>75%</code> width
-                           respectively to support responsive design:
-                        </p>
-                     </div>
-
-                     <div className="mb-3">
-                        <Select
-                           defaultValue={selectedOption}
-                           onChange={setSelectedOption}
-                           options={options}
-                           style={{
-                              lineHeight: "40px",
-                              color: "#7e7e7e",
-                              paddingLeft: " 15px",
-                           }}
-                        />
-                     </div>
-                     <div className="mb-3">
-                        <CustomClearIndicator></CustomClearIndicator>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Themes</h4>
-                        <p>
-                           Select2 supports custom themes using the
-                           <code>theme</code> option so you can style Select2 to
-                           match the rest of your application.
-                        </p>
-                     </div>
-
-                     <div className="mb-4">
-                        <Select
-                           defaultValue={selectedOption}
-                           onChange={setSelectedOption}
-                           options={options}
-                           style={{
-                              lineHeight: "40px",
-                              color: "#7e7e7e",
-                              paddingLeft: " 15px",
-                           }}
-                        />
-                     </div>
-
-                     <div className="">
-                        <CustomClearIndicator></CustomClearIndicator>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Ajax (remote data)</h4>
-                        <p>
-                           Select2 comes with AJAX support built in, using
-                           jQuery's AJAX methods. In this example, we can search
-                           for repositories using GitHub's API:
-                        </p>
-                     </div>
-
-                     <Select
-                        isClearable
-                        // components={{ NoOptionsMessage }}
-                        // styles={{ NoOptionsMessage: base => ({ ...base, ...msgStyles }) }}
-                        isSearchable
-                        name="color"
-                        options={[]}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Loading array data</h4>
-                        <p>
-                           You may use the <code>data</code> configuration
-                           option to load dropdown options from a local array.
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Automatic Selection</h4>
-                        <p>
-                           Select2 can be configured to automatically select the
-                           currently highlighted result when the dropdown is
-                           closed by using the <code>selectOnClose</code>
-                           option:
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Remain open after selection
-                        </h4>
-                        <p>
-                           Select2 will automatically close the dropdown when an
-                           element is selected, similar to what is done with a
-                           normal select box. You may use the
-                           <code>closeOnSelect</code> option to prevent the
-                           dropdown from closing when a result is selected:
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Dropdown placement</h4>
-                        <p>
-                           The <code>dropdownParent</code> option allows you to
-                           pick an alternative element for the dropdown to be
-                           appended to:
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                     <div id="select2-modal"></div>
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Limiting the number of selections
-                        </h4>
-                        <p>
-                           Select2 multi-value select boxes can set restrictions
-                           regarding the maximum number of options that can be
-                           selected. The select below is declared with the
-                           <code>multiple</code> attribute with
-                           <code>maximumSelectionLength</code> in the select2
-                           options.
-                        </p>
-                     </div>
-
-                     <CustomClearIndicator></CustomClearIndicator>
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Dynamic option creation</h4>
-                        <p>
-                           In addition to a prepopulated menu of options,
-                           Select2 can dynamically create new options from text
-                           input by the user in the search box. This feature is
-                           called "tagging". To enable tagging, set the
-                           <code>tags</code> option to
-                           <code>true</code>:
-                        </p>
-                     </div>
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Tagging with multi-value select boxes
-                        </h4>
-                        <p>
-                           Tagging can also be used in multi-value select boxes.
-                           In the example below, we set the
-                           <code>multiple="multiple"</code> attribute on a
-                           Select2 control that also has <code>tags: true</code>
-                           enabled:
-                        </p>
-                     </div>
-
-                     <CustomClearIndicator></CustomClearIndicator>
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-4">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Single select placeholders
-                        </h4>
-                        <p>
-                           Select2 supports displaying a placeholder value using
-                           the
-                           <code>placeholder</code> configuration option. The
-                           placeholder value will be displayed until a selection
-                           is made.
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-4">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Multi-select placeholders
-                        </h4>
-                        <p>
-                           For multi-selects, you must <strong>not</strong> have
-                           an empty
-                           <code>&lt;option&gt;</code>element:
-                        </p>
-                     </div>
-
-                     <CustomClearIndicator></CustomClearIndicator>
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-4">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Default selection placeholders
-                        </h4>
-                        <p>
-                           Alternatively, the value of the
-                           <code>placeholder</code> option can be a data object
-                           representing a default selection (
-                           <code>&lt;option&gt;</code>). In this case the
-                           <code>id</code> of the data object should match the
-                           <code>value</code> of the corresponding default
-                           selection.
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Customizing how results are matched
-                        </h4>
-                        <p>
-                           When users filter down the results by entering search
-                           terms into the search box, Select2 uses an internal
-                           "matcher" to match search terms to results. You may
-                           customize the way that Select2 matches search terms
-                           by specifying a callback for the <code>matcher</code>
-                           configuration option.
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Matching grouped options</h4>
-                        <p>
-                           Only first-level objects will be passed in to the
-                           <code>matcher</code> callback. If you are working
-                           with nested data, you must iterate through the
-                           <code>children</code> array and match them
-                           individually. This allows for more advanced matching
-                           when working with nested objects, allowing you to
-                           handle them however you want.
-                        </p>
-                     </div>
-
-                     <CustomGroup></CustomGroup>
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Minumum search term length
-                        </h4>
-                        <p>
-                           You may set a minimum search term length by using the
-                           <code>minimumInputLength</code> option:
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Maximum search term length
-                        </h4>
-                        <p>
-                           You may limit the maximum length of search terms by
-                           using the
-                           <code>maximumInputLength</code> option:
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Programmatically add new options
-                        </h4>
-                        <p>
-                           New options can be added to a Select2 control
-                           programmatically by creating a new Javascript
-                           <code>Option</code> object and appending it to the
-                           control:
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Create if not exists</h4>
-                        <p>
-                           You can use <code>.find</code> to select the option
-                           if it already exists, and create it otherwise:
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Using jQuery selector</h4>
-                        <p>
-                           Selected items can also be accessed via the
-                           <code>:selected</code> jQuery selector:
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">RTL support</h4>
-                        <p>
-                           Select2 will work on RTL websites if the
-                           <code>dir</code> attribute is set on the
-                           <code>&lt;select&gt;</code>
-                           <span
-                              className="copy-to-clipboard"
-                              title="Copy to clipboard"
-                           ></span>
-                           or any parents of it. You can also initialize Select2
-                           with the <code>dir: "rtl"</code>
-                           <span
-                              className="copy-to-clipboard"
-                              title="Copy to clipboard"
-                           ></span>
-                           configuration option.
-                        </p>
-                     </div>
-
-                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        style={{
-                           lineHeight: "40px",
-                           color: "#7e7e7e",
-                           paddingLeft: " 15px",
-                        }}
-                     />
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-4">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Destroying the Select2 control
-                        </h4>
-                        <p>
-                           The <code>destroy</code> method will remove the
-                           Select2 widget from the target element. It will
-                           revert back to a standard <code>select</code>
-                           control:
-                        </p>
-                     </div>
-
-                     <div className="mb-4">
-                        <Select
-                           defaultValue={selectedOption}
-                           onChange={setSelectedOption}
-                           options={options}
-                           style={{
-                              lineHeight: "40px",
-                              color: "#7e7e7e",
-                              paddingLeft: " 15px",
-                           }}
-                        />
-                     </div>
-                     <button
-                        id="destroy-selector-trigger"
-                        className="btn btn-primary"
-                     >
-                        Destroy Select2
-                     </button>
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-4">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Opening the dropdown</h4>
-                        <p>
-                           Select2 will trigger a few different events when
-                           different actions are taken using the component,
-                           allowing you to add custom hooks and perform actions.
-                        </p>
-                     </div>
-
-                     <div className="mb-4">
-                        <Select
-                           defaultValue={selectedOption}
-                           onChange={setSelectedOption}
-                           options={options}
-                           style={{
-                              lineHeight: "40px",
-                              color: "#7e7e7e",
-                              paddingLeft: " 15px",
-                           }}
-                        />
-                     </div>
-                     <button
-                        id="dropdown-trigger-open"
-                        className="btn btn-primary"
-                     >
-                        Open Dropdown
-                     </button>
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-4">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">
-                           Opening/Closing the dropdown
-                        </h4>
-                        <p>
-                           Select2 will trigger a few different events when
-                           different actions are taken using the component,
-                           allowing you to add custom hooks and perform actions.
-                        </p>
-                     </div>
-                     <button
-                        onClick={() => (
-                           <Select
-                              defaultValue={selectedOption}
-                              onChange={setSelectedOption}
-                              options={options}
-                              style={{
-                                 lineHeight: "40px",
-                                 color: "#7e7e7e",
-                                 paddingLeft: " 15px",
-                              }}
+                  <div>
+                     <Link to="/spendings" className="btn bg-white mr-2">
+                        <svg
+                           width={20}
+                           height={18}
+                           viewBox="0 0 20 18"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <path
+                              d="M19 2.25H8.5C8.5 1.42275 7.82725 0.75 7 0.75H5.5C4.67275 0.75 4 1.42275 4 2.25H1C0.586 2.25 0.25 2.58525 0.25 3C0.25 3.41475 0.586 3.75 1 3.75H4C4 4.57725 4.67275 5.25 5.5 5.25H7C7.82725 5.25 8.5 4.57725 8.5 3.75H19C19.414 3.75 19.75 3.41475 19.75 3C19.75 2.58525 19.414 2.25 19 2.25ZM5.5 3.75V2.25H7L7.00075 2.997C7.00075 2.9985 7 2.99925 7 3C7 3.00075 7.00075 3.0015 7.00075 3.003V3.75H5.5Z"
+                              fill="#2E2E2E"
                            />
-                        )}
-                        id="opening-dropdown-trigger"
-                        className="btn btn-primary mb-2"
-                     >
-                        Open Dropdown
-                     </button>
-                     <button
-                        id="closing-dropdown-trigger"
-                        className="btn btn-primary mb-2"
-                     >
-                        Close Dropdown
-                     </button>
-                     <div className="mt-4">
-                        <Select
-                           defaultValue={selectedOption}
-                           onChange={setSelectedOption}
-                           options={options}
-                           style={{
-                              lineHeight: "40px",
-                              color: "#7e7e7e",
-                              paddingLeft: " 15px",
-                           }}
-                        />
-                     </div>
+                           <path
+                              d="M19 8.25H14.5C14.5 7.42275 13.8273 6.75 13 6.75H11.5C10.6727 6.75 10 7.42275 10 8.25H1C0.586 8.25 0.25 8.58525 0.25 9C0.25 9.41475 0.586 9.75 1 9.75H10C10 10.5773 10.6727 11.25 11.5 11.25H13C13.8273 11.25 14.5 10.5773 14.5 9.75H19C19.414 9.75 19.75 9.41475 19.75 9C19.75 8.58525 19.414 8.25 19 8.25ZM11.5 9.75V8.25H13L13.0007 8.997C13.0007 8.9985 13 8.99925 13 9C13 9.00075 13.0007 9.0015 13.0007 9.003V9.75H11.5Z"
+                              fill="#2E2E2E"
+                           />
+                           <path
+                              d="M19 14.25H8.5C8.5 13.4227 7.82725 12.75 7 12.75H5.5C4.67275 12.75 4 13.4227 4 14.25H1C0.586 14.25 0.25 14.5853 0.25 15C0.25 15.4148 0.586 15.75 1 15.75H4C4 16.5773 4.67275 17.25 5.5 17.25H7C7.82725 17.25 8.5 16.5773 8.5 15.75H19C19.414 15.75 19.75 15.4148 19.75 15C19.75 14.5853 19.414 14.25 19 14.25ZM5.5 15.75V14.25H7L7.00075 14.997C7.00075 14.9985 7 14.9992 7 15C7 15.0008 7.00075 15.0015 7.00075 15.003V15.75H5.5Z"
+                              fill="#2E2E2E"
+                           />
+                        </svg>
+                     </Link>
+                     <Dropdown className="custom-dropdown">
+                        <Dropdown.Toggle
+                           as="a"
+                           variant=""
+                           className="arrow-false btn bg-white d-flex align-items-center"
+                        >
+                           <div className="text-left mr-3">
+                              <span className="text-black">Newest</span>
+                           </div>
+                           <i className="fa fa-caret-down" aria-hidden="true" />
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu className="dropdown-menu-right">
+                           <Dropdown.Item className="" to="/spendings">
+                              4 June 2020 - 4 July 2020
+                           </Dropdown.Item>
+                           <Dropdown.Item className="" to="/spendings">
+                              5 july 2020 - 4 Aug 2020
+                           </Dropdown.Item>
+                        </Dropdown.Menu>
+                     </Dropdown>
                   </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Select2 methods</h4>
-                        <p>
-                           Select2 has several built-in methods that allow
-                           programmatic control of the component.
-                        </p>
-                     </div>
-                     <label className="select2-label">Single select</label>
-                     <br />
-                     <button
-                        className="js-programmatic-set-val btn btn-primary mb-2 mr-1"
-                        aria-label="Set Select2 option"
-                     >
-                        Set "California"
-                     </button>
-                     <button className="js-programmatic-open btn btn-primary mb-2 mr-1">
-                        Open
-                     </button>
-                     <button className="js-programmatic-close btn btn-primary mb-2 mr-1">
-                        Close
-                     </button>
-                     <button className="js-programmatic-destroy btn btn-primary mb-2 mr-1">
-                        Destroy
-                     </button>
-                     <button className="js-programmatic-init btn btn-primary mb-2 mr-1">
-                        Re-initialize
-                     </button>
-                     <div className="mt-4">
-                        <CustomSelete />
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-            <div className="col-xl-6">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="mb-4">
-                        <h4 className="card-title">Select2 methods</h4>
-                        <p>
-                           Select2 has several built-in methods that allow
-                           programmatic control of the component.
-                        </p>
-                     </div>
-                     <label className="select2-label">Multiple select</label>
-                     <br />
-                     <button
-                        className="js-programmatic-multi-set-val btn btn-primary mb-2 mr-1"
-                        aria-label="Set Select2 option"
-                     >
-                        Set to Hawaii and California
-                     </button>
-                     <button className="js-programmatic-multi-clear btn btn-primary mb-2 mr-1">
-                        Clear
-                     </button>
-                     <div className="mt-4">
-                        <CustomClearIndicator />
-                     </div>
-                  </div>
+                  <SpendingDataTable />
                </div>
             </div>
          </div>
+           
+           
+        
+      
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
+ <br></br>
       </Fragment>
    );
 };

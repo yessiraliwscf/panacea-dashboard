@@ -65,12 +65,12 @@ class SideBar extends Component {
         '',
         'analytics',
         'campaign',
-        'social-network-campaign',
+        'donations',
         'spendings',
         'new-compaign',
       ],
       app = [
-        'app-profile',
+        'profile',
         'app-calender',
         'email-compose',
         'email-inbox',
@@ -82,7 +82,7 @@ class SideBar extends Component {
         'ecom-checkout',
         'ecom-invoice',
         'ecom-customers',
-        'post-details',
+        'policies',
         'ecom-product-detail',
       ],
       email = ['email-compose', 'email-inbox', 'email-read'],
@@ -124,7 +124,7 @@ class SideBar extends Component {
         'ui-grid',
       ],
       plugins = [
-        'uc-select2',
+        'activity',
         'uc-nestable',
         'uc-sweetalert',
         'uc-toastr',
@@ -169,28 +169,28 @@ class SideBar extends Component {
             
             </li>
             <li className={`${app.includes(path) ? 'mm-active' : ''}`}>
-              <Link className="has-arrow ai-icon" to="/post-details" aria-expanded="false">
+              <Link className="has-arrow ai-icon" to="/policies" aria-expanded="false">
                 <i className="flaticon-381-television"></i>
                 <span className="nav-text">Your Policy</span>
               </Link>
          
             </li>
             <li className={`${charts.includes(path) ? 'mm-active' : ''}`}>
-              <Link className="has-arrow ai-icon" to="/social-network-campaign" aria-expanded="false">
+              <Link className="has-arrow ai-icon" to="/donations" aria-expanded="false">
                 <i className="flaticon-381-network"></i>
                 <span className="nav-text">Donations</span>
               </Link>
            
             </li>
             <li className={`${bootstrap.includes(path) ? 'mm-active' : ''}`}>
-              <Link className="has-arrow ai-icon" to="/app-profile" aria-expanded="false">
+              <Link className="has-arrow ai-icon" to="/profile" aria-expanded="false">
                 <i class="flaticon-381-settings-2"></i>
                 <span className="nav-text">Profile</span>
               </Link>
              
             </li>
             <li className={`${plugins.includes(path) ? 'mm-active' : ''}`}>
-              <Link className="has-arrow ai-icon" to="/uc-select2" aria-expanded="false">
+              <Link className="has-arrow ai-icon" to="/activity" aria-expanded="false">
                 <i class="flaticon-381-notepad"></i>
                 <span className="nav-text">Activity</span>
               </Link>

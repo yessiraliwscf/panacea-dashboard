@@ -102,7 +102,7 @@ const Markup = () => {
       /// Deshborad
       { url: "", component: Home },
       { url: "campaign", component: Campaign },
-      { url: "social-network-campaign", component: SocialNetworkCampaign },
+      { url: "donations", component: SocialNetworkCampaign },
       { url: "spendings", component: Spendings },
       { url: "analytics", component: Analytics },
       { url: "new-compaign", component: NewCompaign },
@@ -125,12 +125,12 @@ const Markup = () => {
       { url: "ui-typography", component: UiTypography },
       { url: "ui-grid", component: UiGrid },
       /// Apps
-      { url: "app-profile", component: AppProfile },
+      { url: "profile", component: AppProfile },
       { url: "email-compose", component: Compose },
       { url: "email-inbox", component: Inbox },
       { url: "email-read", component: Read },
       { url: "app-calender", component: Calendar },
-      { url: "post-details", component: PostDetails },
+      { url: "policies", component: PostDetails },
 
       /// Shop
       { url: "ecom-product-grid", component: ProductGrid },
@@ -164,7 +164,7 @@ const Markup = () => {
 
       /// Plugin
 
-      { url: "uc-select2", component: Select2 },
+      { url: "activity", component: Select2 },
       { url: "uc-nestable", component: Nestable },
       { url: "uc-noui-slider", component: MainNouiSlider },
       { url: "uc-sweetalert", component: MainSweetAlert },

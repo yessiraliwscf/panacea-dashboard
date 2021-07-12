@@ -108,7 +108,7 @@ const Routes = () => {
       { url: "ui-typography", component: UiTypography },
       { url: "ui-grid", component: UiGrid },
       /// Apps
-      { url: "app-profile", component: AppProfile },
+      { url: "profile", component: AppProfile },
       { url: "email-compose", component: Compose },
       { url: "email-inbox", component: Inbox },
       { url: "email-read", component: Read },
@@ -150,7 +150,7 @@ const Routes = () => {
 
       /// Plugin
 
-      { url: "uc-select2", component: Select2 },
+      { url: "activity", component: Select2 },
       { url: "uc-nestable", component: Nestable },
       { url: "uc-noui-slider", component: MainNouiSlider },
       { url: "uc-sweetalert", component: MainSweetAlert },

@@ -8789,6 +8789,9 @@ a {
 .text-black {
   color: #000 !important; }
 
+.text-white {
+  color: #fff !important; }
+
 .dz-scroll {
   position: relative; }
 

@@ -106,10 +106,10 @@ const PostDetails = () => {
                            <div  className="media align-items-center">
                               <div className="media-body">
                                  <p className="fs-18 mb-2 wspace-no">
-                                    Total Campaign
+                                    Total Policies
                                  </p>
-                                 <h1 className="fs-36 font-w600 text-black mb-0">
-                                    67,124
+                                 <h1 className="fs-36 font-w600 text-white mb-0">
+                                    5
                                  </h1>
                               </div>
                               <span className={`ml-3  text-white ${styles.darkNavyBG}`} >
@@ -126,10 +126,10 @@ const PostDetails = () => {
                            <div className="media align-items-center">
                               <div className="media-body">
                                  <p className="fs-18 mb-2 wspace-no">
-                                    Total Audience
+                                    Premium Deposit
                                  </p>
-                                 <h1 className="fs-36 font-w600 d-flex align-items-center text-black mb-0">
-                                    412,531
+                                 <h1 className="fs-36 font-w600 d-flex align-items-center text-white mb-0">
+                                    $ 13000
                                  </h1>
                               </div>
                               <span className={`ml-3  text-white ${styles.darkNavyBG}`}>
@@ -145,10 +145,10 @@ const PostDetails = () => {
                            <div className="media align-items-center">
                               <div className="media-body">
                                  <p className="fs-18 mb-2 wspace-no">
-                                    Spends Yesterday
+                                    Premium Paid
                                  </p>
-                                 <h1 className="fs-36 font-w600 text-black mb-0">
-                                    $4,567
+                                 <h1 className="fs-36 font-w600 text-white mb-0">
+                                    $ 25000
                                  </h1>
                               </div>
                               <span className={`ml-3  text-white ${styles.darkNavyBG}`}>
@@ -165,10 +165,10 @@ const PostDetails = () => {
                            <div className="media align-items-center">
                               <div className="media-body">
                                  <p className="fs-18 mb-2 wspace-no">
-                                    Spends Today
+                                    Last Premium
                                  </p>
-                                 <h1 className="fs-36 font-w600 text-black mb-0">
-                                    $5,245
+                                 <h1 className="fs-36 font-w600 text-white mb-0">
+                                    $ 3000
                                  </h1>
                               </div>
                               <span className={`ml-3  text-white ${styles.darkNavyBG}`}>

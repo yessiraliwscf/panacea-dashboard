@@ -6,7 +6,9 @@ import { Dropdown, Nav, Tab } from "react-bootstrap";
 
 import loadable from "@loadable/component";
 import pMinDelay from "p-min-delay";
+import BasicDatatable from "./../../table/BasicDatatable";
 import LineChart8 from "../../charts/Chartjs/line3";
+import styles from './PostDetails.module.css'
 const PostDetails = () => {
 
    return (
@@ -97,27 +99,89 @@ const PostDetails = () => {
                                  className="tab-content"
                                  id="myTabContent"
                               >
-                                 <Tab.Pane eventKey="monthly">
-                                    <LineChart8
-                                       height="300"
-                                       backgroundColor="#52B141"
-                                       data={0}
-                                    />
-                                 </Tab.Pane>
-                                 <Tab.Pane eventKey="weekly">
-                                    <LineChart8
-                                       height="300"
-                                       backgroundColor="#52B141"
-                                       data={1}
-                                    />
-                                 </Tab.Pane>
-                                 <Tab.Pane eventKey="today">
-                                    <LineChart8
-                                       height="300"
-                                       backgroundColor="#52B141"
-                                       data={2}
-                                    />
-                                 </Tab.Pane>
+                                 <div className="row">
+                                 <div className="col-md-6">
+                     <div  className="card widget-stat ">
+                        <div className={`card-body p-4 ${styles.lightPurpleBackground}`} >
+                           <div  className="media align-items-center">
+                              <div className="media-body">
+                                 <p className="fs-18 mb-2 wspace-no">
+                                    Total Campaign
+                                 </p>
+                                 <h1 className="fs-36 font-w600 text-black mb-0">
+                                    67,124
+                                 </h1>
+                              </div>
+                              <span className={`ml-3  text-white ${styles.darkNavyBG}`} >
+                                 <i className="flaticon-381-promotion" />
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div className="col-md-6">
+                     <div className="card widget-stat">
+                        <div  className={`card-body p-4 ${styles.lightPurpleBackground}`}>
+                           <div className="media align-items-center">
+                              <div className="media-body">
+                                 <p className="fs-18 mb-2 wspace-no">
+                                    Total Audience
+                                 </p>
+                                 <h1 className="fs-36 font-w600 d-flex align-items-center text-black mb-0">
+                                    412,531
+                                 </h1>
+                              </div>
+                              <span className={`ml-3  text-white ${styles.darkNavyBG}`}>
+                                 <i className="flaticon-381-user-7" />
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="col-md-6">
+                     <div className="card widget-stat">
+                        <div  className={`card-body p-4 ${styles.lightPurpleBackground}`}>
+                           <div className="media align-items-center">
+                              <div className="media-body">
+                                 <p className="fs-18 mb-2 wspace-no">
+                                    Spends Yesterday
+                                 </p>
+                                 <h1 className="fs-36 font-w600 text-black mb-0">
+                                    $4,567
+                                 </h1>
+                              </div>
+                              <span className={`ml-3  text-white ${styles.darkNavyBG}`}>
+                                 <i className="fa fa-usd" />
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div className="col-md-6">
+                     <div className="card widget-stat">
+                        <div className={`card-body p-4 ${styles.lightPurpleBackground}`}>
+                           <div className="media align-items-center">
+                              <div className="media-body">
+                                 <p className="fs-18 mb-2 wspace-no">
+                                    Spends Today
+                                 </p>
+                                 <h1 className="fs-36 font-w600 text-black mb-0">
+                                    $5,245
+                                 </h1>
+                              </div>
+                              <span className={`ml-3  text-white ${styles.darkNavyBG}`}>
+                                 <i className="flaticon-381-calendar-1" />
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                                 </div>
+                     
+               
+                
                               </Tab.Content>
                            </div>
                         </Tab.Container>
@@ -439,109 +503,7 @@ const PostDetails = () => {
                      </div>
                   </div>
 
-                  <div className="col-xl-12 col-xxl-6">
-                     <div className="card" id="user-activity2">
-                        <Tab.Container defaultActiveKey="monthly">
-                           <div className="card-header pb-0 d-block d-sm-flex border-0">
-                              <h3 className="fs-20 text-white mb-0">
-                               Policy Summary
-                              </h3>
-                              <div className="card-action card-tabs mt-3 mt-sm-0">
-                                 <Nav
-                                    as="ul"
-                                    className="nav nav-tabs"
-                                    role="tablist"
-                                 >
-                                    <Nav.Item as="li" className="nav-item">
-                                       <Nav.Link
-                                          className="nav-link"
-                                          eventKey="monthly"
-                                          role="tab"
-                                       >
-                                          Monthly
-                                       </Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item as="li" className="nav-item">
-                                       <Nav.Link
-                                          className="nav-link"
-                                          eventKey="weekly"
-                                          role="tab"
-                                       >
-                                          Weekly
-                                       </Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item as="li" className="nav-item">
-                                       <Nav.Link
-                                          className="nav-link"
-                                          eventKey="today"
-                                          role="tab"
-                                       >
-                                          Today
-                                       </Nav.Link>
-                                    </Nav.Item>
-                                 </Nav>
-                              </div>
-                           </div>
-                           <div className="card-body">
-                              <div className="d-sm-flex mb-4 d-block justify-content-between align-items-center">
-                                 <div>
-                                    <h1 className=" mb-0 text-white font-w600">
-                                       951,123k
-                                    </h1>
-                                    <svg
-                                       className="mr-2"
-                                       width={18}
-                                       height={10}
-                                       viewBox="0 0 26 13"
-                                       fill="none"
-                                       xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                       <path
-                                          d="M26 -1.1365e-06L13 13L0 0"
-                                          fill="#F83737"
-                                       />
-                                    </svg>
-                                    <span className="text-danger fs-14">
-                                       +9% from last month
-                                    </span>
-                                 </div>
-                                 <Link
-                                    to="/analytics"
-                                    className="text-primary btn border mt-sm-0 mt-3"
-                                 >
-                                    Download CSV
-                                 </Link>
-                              </div>
-                              <Tab.Content
-                                 className="tab-content"
-                                 id="myTabContent2"
-                              >
-                                 <Tab.Pane eventKey="monthly">
-                                    <LineChart8
-                                       height="300"
-                                       backgroundColor="#FF8E26"
-                                       data={0}
-                                    />
-                                 </Tab.Pane>
-                                 <Tab.Pane eventKey="weekly">
-                                    <LineChart8
-                                       height="300"
-                                       backgroundColor="#FF8E26"
-                                       data={1}
-                                    />
-                                 </Tab.Pane>
-                                 <Tab.Pane eventKey="today">
-                                    <LineChart8
-                                       height="300"
-                                       backgroundColor="#FF8E26"
-                                       data={2}
-                                    />
-                                 </Tab.Pane>
-                              </Tab.Content>
-                           </div>
-                        </Tab.Container>
-                     </div>
-                  </div>
+                  <BasicDatatable />
            </div>
          </div>
       </div>

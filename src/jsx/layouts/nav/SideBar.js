@@ -162,17 +162,11 @@ class SideBar extends Component {
         <PerfectScrollbar className="deznav-scroll">
           <MM className="metismenu" id="menu">
             <li className={`${deshBoard.includes(path) ? 'mm-active' : ''}`}>
-              <Link className="has-arrow ai-icon" to="#" aria-expanded="false">
+              <Link className="has-arrow ai-icon" to="/" aria-expanded="false">
                 <i className="flaticon-381-networking"></i>
                 <span className="nav-text">Dashboard</span>
               </Link>
-              <ul aria-expanded="false">
-                <li>
-                  <Link to="/" className={`${path === '' ? 'mm-active' : ''}`}>
-                    Dashboard
-                  </Link>
-                </li>
-              </ul>
+            
             </li>
             <li className={`${app.includes(path) ? 'mm-active' : ''}`}>
               <Link className="has-arrow ai-icon" to="/post-details" aria-expanded="false">

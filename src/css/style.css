@@ -15992,6 +15992,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   [data-primary="color_2"] .table.primary-table-bg-hover tbody tr:not(:last-child) td, [data-primary="color_2"] .table.primary-table-bg-hover tbody tr:not(:last-child) th {
     border-bottom: 1px solid #102e4f; }
 [data-primary="color_2"] table.dataTable tr.selected {
+ 
   color: #143b64; }
 [data-primary="color_2"] .dataTables_wrapper .dataTables_paginate .paginate_button.current {
   color: #143b64 !important;
@@ -26768,7 +26769,8 @@ table#example {
   padding: 0rem 0 2rem 0; }
 
 table.dataTable {
-  color: #3e4954; }
+  background: #6754E2;
+  color: white; }
 
 #example2_wrapper .dataTables_scrollBody {
   max-height: 33.25rem !important; }
@@ -28080,7 +28082,9 @@ span#counter {
 .social-Campaign-audio .sca-row {
   border-radius: 14px;
   display: flex;
+  background: #8576E7 !important;
   flex-flow: wrap; }
+
   .social-Campaign-audio .sca-row:hover {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
     background: #fff; }

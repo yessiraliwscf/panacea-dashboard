@@ -115,7 +115,7 @@ function SocialNetworkCampaign() {
             <div className="col-xl-12 social-Campaign-audio">
                <div className="sca-row p-3 row align-items-center sp16 mx-0 mb-2 bg-white">
                   <div className="mb-3 col-xl-4 col-xxl-3 col-md-4 col-sm-12 my-2">
-                     <p className="text-primary mb-0">#ADS001245</p>
+                     <p className="mb-0">#ADS001245</p>
                      <h3 className="fs-20 mb-2 text-ov mr-3">
                         <Link className="text-black" to="/analytics">
                            50% OFF Floor Lamp Get it Now!
@@ -305,7 +305,7 @@ function SocialNetworkCampaign() {
                </div>
                <div className="sca-row p-3 row align-items-center sp16 mx-0 mb-2 bg-white">
                   <div className="mb-3 col-xl-4 col-xxl-3 col-md-4 col-sm-12 my-2">
-                     <p className="text-primary mb-0">#ADS001246</p>
+                     <p className="mb-0">#ADS001246</p>
                      <h3 className="fs-20 mb-2 text-ov mr-3">
                         <Link className="text-black" to="/analytics">
                            15% OFF Granite Stone
@@ -495,7 +495,7 @@ function SocialNetworkCampaign() {
                </div>
                <div className="sca-row p-3 row align-items-center sp16 mx-0 mb-2 bg-white">
                   <div className="mb-3 col-xl-4 col-xxl-3 col-md-4 col-sm-12 my-2">
-                     <p className="text-primary mb-0">#ADS001247</p>
+                     <p className=" mb-0">#ADS001247</p>
                      <h3 className="fs-20 mb-2 text-ov mr-3">
                         <Link className="text-black" to="/analytics">
                            Game Online Vouchers 20% OFF
@@ -685,7 +685,7 @@ function SocialNetworkCampaign() {
                </div>
                <div className="sca-row p-3 row align-items-center sp16 mx-0 mb-2 bg-white">
                   <div className="mb-3 col-xl-4 col-xxl-3 col-md-4 col-sm-12 my-2">
-                     <p className="text-primary mb-0">#ADS001245</p>
+                     <p className=" mb-0">#ADS001245</p>
                      <h3 className="fs-20 mb-2 text-ov mr-3">
                         <Link className="text-black" to="/analytics">
                            50% OFF Floor Lamp Get it Now!
@@ -875,7 +875,7 @@ function SocialNetworkCampaign() {
                </div>
                <div className="sca-row p-3 row align-items-center sp16 mx-0 mb-2 bg-white">
                   <div className="mb-3 col-xl-4 col-xxl-3 col-md-4 col-sm-12 my-2">
-                     <p className="text-primary mb-0">#ADS001246</p>
+                     <p className=" mb-0">#ADS001246</p>
                      <h3 className="fs-20 mb-2 text-ov mr-3">
                         <Link className="text-black" to="/analytics">
                            15% OFF Granite Stone

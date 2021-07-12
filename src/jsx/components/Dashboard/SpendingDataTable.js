@@ -212,7 +212,7 @@ const SpendingDataTable = () => {
                            <span className="font-w600">$245,173.02</span>
                         </td>
                         <td>
-                           <span className="font-w600 text-primary">
+                           <span className="font-w600 ">
                               $67,234.66
                            </span>
                         </td>
@@ -402,7 +402,7 @@ const SpendingDataTable = () => {
                            <span className="font-w600">$245,173.02</span>
                         </td>
                         <td>
-                           <span className="font-w600 text-primary">
+                           <span className="font-w600 t">
                               $67,234.66
                            </span>
                         </td>
@@ -592,7 +592,7 @@ const SpendingDataTable = () => {
                            <span className="font-w600">$245,173.02</span>
                         </td>
                         <td>
-                           <span className="font-w600 text-primary">
+                           <span className="font-w600 ">
                               $67,234.66
                            </span>
                         </td>
@@ -782,7 +782,7 @@ const SpendingDataTable = () => {
                            <span className="font-w600">$245,173.02</span>
                         </td>
                         <td>
-                           <span className="font-w600 text-primary">
+                           <span className="font-w600 ">
                               $67,234.66
                            </span>
                         </td>
@@ -972,7 +972,7 @@ const SpendingDataTable = () => {
                            <span className="font-w600">$245,173.02</span>
                         </td>
                         <td>
-                           <span className="font-w600 text-primary">
+                           <span className="font-w600 ">
                               $67,234.66
                            </span>
                         </td>
@@ -1162,7 +1162,7 @@ const SpendingDataTable = () => {
                            <span className="font-w600">$245,173.02</span>
                         </td>
                         <td>
-                           <span className="font-w600 text-primary">
+                           <span className="font-w600">
                               $67,234.66
                            </span>
                         </td>
@@ -1352,7 +1352,7 @@ const SpendingDataTable = () => {
                            <span className="font-w600">$245,173.02</span>
                         </td>
                         <td>
-                           <span className="font-w600 text-primary">
+                           <span className="font-w600 ">
                               $67,234.66
                            </span>
                         </td>
@@ -1542,7 +1542,7 @@ const SpendingDataTable = () => {
                            <span className="font-w600">$245,173.02</span>
                         </td>
                         <td>
-                           <span className="font-w600 text-primary">
+                           <span className="font-w600">
                               $67,234.66
                            </span>
                         </td>
@@ -1732,7 +1732,7 @@ const SpendingDataTable = () => {
                            <span className="font-w600">$245,173.02</span>
                         </td>
                         <td>
-                           <span className="font-w600 text-primary">
+                           <span className="font-w600 ">
                               $67,234.66
                            </span>
                         </td>
@@ -1922,7 +1922,7 @@ const SpendingDataTable = () => {
                            <span className="font-w600">$245,173.02</span>
                         </td>
                         <td>
-                           <span className="font-w600 text-primary">
+                           <span className="font-w600">
                               $67,234.66
                            </span>
                         </td>

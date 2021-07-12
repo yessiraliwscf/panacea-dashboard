@@ -36,7 +36,7 @@ const BasicDatatable = () => {
       <div className="col-12">
          <div className="card">
             <div className="card-header">
-               <h4 className="card-title">Basic Datatable</h4>
+               <h4 className="card-title text-white">Policy Summary</h4>
             </div>
             <div className="card-body">
                <Table responsive className="w-100">
@@ -75,62 +75,7 @@ const BasicDatatable = () => {
                               : (activePag.current + 1) * sort}{" "}
                            of {data.jobsTable.data.length} entries
                         </div>
-                        <div className="dataTables_paginate paging_simple_numbers">
-                           <Pagination
-                              className="pagination-primary pagination-box"
-                              size="lg"
-                           >
-                              <li
-                                 className=""
-                                 style={{ borderRadius: "4px" }}
-                                 onClick={() =>
-                                    activePag.current > 0 &&
-                                    onClick(activePag.current - 1)
-                                 }
-                              >
-                                 <Link
-                                    className="paginate_button previous disabled"
-                                    style={{ padding: "10px 20px" }}
-                                    to="#"
-                                 >
-                                    Previous
-                                 </Link>
-                              </li>
-                              <span>
-                                 {jobPaggination.map((number, i) => (
-                                    <Link
-                                       key={i}
-                                       to="/table-datatable-basic"
-                                       className={`paginate_button  ${
-                                          activePag.current === i
-                                             ? "current"
-                                             : ""
-                                       }`}
-                                       onClick={() => onClick(i)}
-                                    >
-                                       {number}
-                                    </Link>
-                                 ))}
-                              </span>
-
-                              <li
-                                 className=""
-                                 onClick={() =>
-                                    activePag.current + 1 <
-                                       jobPaggination.length &&
-                                    onClick(activePag.current + 1)
-                                 }
-                              >
-                                 <Link
-                                    className="paginate_button next"
-                                    to="#"
-                                    style={{ padding: "10px 20px" }}
-                                 >
-                                    Next
-                                 </Link>
-                              </li>
-                           </Pagination>
-                        </div>
+                      
                      </div>
                   </div>
                </Table>

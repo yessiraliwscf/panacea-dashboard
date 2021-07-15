@@ -35,13 +35,7 @@ const Header = ({
                   </div>
 
                   <ul className="navbar-nav header-right">
-                     {!path && (
-                        <li className="nav-item dropdown d-none d-xl-flex">
-                           <Link className="btn btn-primary" to="/new-compaign">
-                              + New Policy
-                           </Link>
-                        </li>
-                     )}
+                   
                      <li className="nav-item dropdown notification_dropdown">
                         
                         <div

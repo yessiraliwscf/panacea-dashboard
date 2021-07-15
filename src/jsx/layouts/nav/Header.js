@@ -78,13 +78,7 @@ const Header = ({
                         </div>
                      </li>
 
-                     {path && (
-                        <li className="nav-item dropdown ">
-                           <Link className={`btn ${styles.btnpurple}`}  to="/new-compaign">
-                              + New Policy
-                           </Link>
-                        </li>
-                     )}
+                  
                      
                   </ul>
                </div>

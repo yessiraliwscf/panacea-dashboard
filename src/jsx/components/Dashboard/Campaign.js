@@ -296,7 +296,7 @@ function Campaign() {
                            <p className="text-primary mb-1">#ADS001245</p>
                            <h3 className="fs-20">
                               <Link className="text-black" to="/analytics">
-                                 15% OFF Granite Stone
+                              Content Needed
                               </Link>
                            </h3>
                            <svg

@@ -24,8 +24,8 @@ function Home() {
             </div>
             <div className="d-none d-lg-flex align-items-center">
                <div className="text-right">
-                  <h3 className="fs-20  mb-0">09:62 AM</h3>
-                  <span className="fs-14">Monday, 3 July 2021</span>
+                  <h3 className="fs-20  mb-0">12:09 AM</h3>
+                  <span className="fs-14">Sunday, 18 July 2021</span>
                </div>
                <Link
                   className="ml-4  p-3 rounded border text-center width60"
